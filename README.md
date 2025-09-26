@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rekhia.com 🌐
 
-## Getting Started
+Rekhia.com is the official website of **Rekhia**, a **UX/UI Design and Software Development Studio** created under **Busdigital LLC (U.S.)**, operating internationally with a trilingual focus (**English, Hebrew, Spanish**).  
 
-First, run the development server:
+This project is the **first public version (v1)** of the site, currently featuring the **homepage** with all the technical foundations needed to grow in the next phases.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Rekhia is a **multidisciplinary digital studio** that blends UX design, web & app development, e-commerce, and monthly support plans.  
+The website communicates Rekhia’s philosophy through two narratives:  
+- **Pragmatic:** delivering reliable, scalable digital products today.  
+- **Visionary:** building the knowledge, talent, and processes to incubate a future **next-generation MMO**.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+In this first version we have achieved:  
+- A solid structure built on **Next.js 15** with **Turbopack**.  
+- **Internationalization (i18n)** with `next-intl`, supporting **EN** and **HE** with automatic detection via middleware.  
+- **Responsive design** powered by TailwindCSS.  
+- Key sections already implemented:
+  - **Hero** with dynamic titles and `t.rich` for styled spans and line breaks.  
+  - **Services** with visual service cards and custom background images.  
+  - **Process / Timeline** animated with Framer Motion, adapted for both **LTR** and **RTL** layouts.  
+  - **Final CTA** with brand imagery.  
+  - **Professional footer** with logo, navigation, and legal links.  
+- **Stripe integration** (monthly plans and custom projects via checkout links).  
+- **Vercel build & deployment** configured for CI/CD.  
+- Fixed environment-specific issues (e.g., `.PNG` → `.png` file extension bug in production builds).  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router, Turbopack).  
+- **i18n:** [next-intl](https://next-intl-docs.vercel.app/).  
+- **Animations:** [Framer Motion](https://www.framer.com/motion/).  
+- **UI & Styling:** [TailwindCSS](https://tailwindcss.com/).  
+- **Hosting:** [Vercel](https://vercel.com/).  
+- **Payments:** [Stripe](https://stripe.com/) (checkout links and invoices).  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📂 Current Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+rekhiacom/
+├── app/
+│ ├── [locale]/ # Internationalized routes (EN/HE)
+│ ├── layout.tsx # Root layout
+│ └── page.tsx # Homepage (v1)
+├── components/ui/ # Reusable UI components
+│ ├── Hero
+│ ├── Services
+│ ├── Timeline
+│ ├── CTA
+│ └── Footer
+├── public/ # Static assets (images, logo)
+├── i18n/ # Language configs & middleware
+├── README.md # Project documentation
+└── package.json
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌍 Internationalization (i18n)
+
+- Supported locales:  
+  - **EN** → `rekhiacom.vercel.app/en`  
+  - **HE** → `rekhiacom.vercel.app/he`  
+- Automatic locale detection handled via middleware.  
+- Translations stored in JSON (`en.json`, `he.json`) with support for `t.rich` (spans, line breaks, styled chunks).  
+
+---
+
+## 📌 Next Steps
+
+- Complete additional pages: **Pricing, About, FAQ, Privacy Policy, Terms of Service**.  
+- Implement **Stripe Checkout** directly in pricing pages.  
+- Add **portfolio / case studies** section.  
+- Improve **accessibility (a11y)**.  
+- Optimize SEO and multilingual indexing.  
+
+---
+
+## 👨‍💻 Contribution
+
+This repository is private and maintained by the Rekhia Studio team.  
+External pull requests are not accepted at this stage.  
+
+---
+
+## ⚖️ License
+
+© 2025 Busdigital LLC.  
+All rights reserved.  
