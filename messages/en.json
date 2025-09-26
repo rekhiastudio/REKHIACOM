@@ -1,0 +1,56 @@
+{
+  "Nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "Hero": {
+    "title": "Rekhia: The <cl>UX</cl>  & Software <break>Development Studio</break>",
+    "subtitle": "We build beautiful products with the latest technologies and frameworks. We are a team of passionate developers and designers that love to build amazing products.",
+    "cta": "Get in Touch"
+  },
+  "Services": {
+    "title": "Services",
+    "web": {
+      "title": "Web & App Development",
+      "desc": "Building fast, scalable websites and applications with modern technologies. We turn ideas into reliable digital products, ready to grow with your business."
+    },
+    "ux": {
+      "title": "UX/UI Design",
+      "desc": "Crafting intuitive and elegant interfaces that put users first. From wireframes to polished visuals, we design experiences that are clear, engaging, and conversion-driven."
+    },
+    "support": {
+      "title": "Support Plans",
+      "desc": "Flexible monthly plans to keep your digital presence running smoothly. Continuous updates, optimizations, and support tailored to your needs."
+    }
+  },
+  "Process": {
+    "title": "Our Process",
+    "subtitle": "Every project follows a clear and proven path. From discovery to growth, we ensure precision at every step—so your digital solution is built to last and evolve."
+  },
+  "Timeline": {
+    "step1": {
+      "title": "Initial Contact & Discovery",
+      "desc": "The journey begins with a conversation. Our sales and UX representatives listen closely to your needs, goals, and challenges, making sure we understand your vision before any design work begins."
+    },
+    "step2": {
+      "title": "Design & Prototyping",
+      "desc": "Our UX/UI team translates ideas into wireframes and interactive prototypes. This stage focuses on clarity, usability, and aesthetics—ensuring you can see and feel your product before development."
+    },
+    "step3": {
+      "title": "Development & Implementation",
+      "desc": "With the design approved, our developers bring it to life using modern, scalable technologies. You receive regular updates and previews as your product takes shape."
+    },
+    "step4": {
+      "title": "Delivery & Ongoing Support",
+      "desc": "Once your product is ready, we launch it with precision. But our work doesn’t stop there—our flexible support plans keep everything running smoothly and evolving with your business."
+    }
+  },
+  "CTA": {
+    "title": "Ready to start your project?",
+    "subtitle": "Let’s build your next digital experience together. Our team is here to answer your questions and guide you every step of the way.",
+    "button": "Contact Us"
+  }
+}
