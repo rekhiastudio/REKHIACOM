@@ -12,6 +12,7 @@ import {
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { notable, inter } from '@/lib/fonts'
+import Link from "next/link";
 
 
 interface NavbarProps {
@@ -129,7 +130,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
@@ -143,7 +144,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -236,8 +237,8 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
-      href="#"
+    <Link
+      href="/"
       className="relative z-20 flex  pr-8 text-sm font-normal text-black "
     >
       <Image
@@ -252,7 +253,7 @@ export const NavbarLogo = () => {
       <div className="pt-3 ml-5">
         <span className={`${notable.className} text-xl text-black dark:text-white`}>REKHIA</span>
       </div>
-    </a>
+    </Link>
   );
 };
 

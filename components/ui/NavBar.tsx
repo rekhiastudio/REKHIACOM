@@ -54,7 +54,7 @@ export function NavbarDemo() {
   const navItems = [
     {
       name: "Contact",
-      link: "#contact",
+      link: "/contact",
     },
     {
       name: "Pricing",
