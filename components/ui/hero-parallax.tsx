@@ -205,8 +205,6 @@ export const HeroParallax = ({ products }: { products: Product[] }) => {
   const locale = useLocale();
   const isRTL = locale === "he";
 
-  console.log("Locale:", locale, "isRTL:", isRTL);
-
   // Distancia horizontal: usa un valor menor en móviles para no “sacar” las filas de pantalla.
   // (Puedes tunear este número si quieres aún más suavidad).
   const DIST = 900;
@@ -314,7 +312,7 @@ export const Header = () => {
   const t = useTranslations("Hero");
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-3xl md:text-6xl font-bold dark:text-white">
+      <h1 className="text-[1.7rem] md:text-6xl font-bold dark:text-white">
         {t.rich("title", {
           cl: (chunks) => <span className="text-red-500">{chunks}</span>,
           break: (chunks) => (
