@@ -329,7 +329,7 @@ export const Header = () => {
         })}
       </h1>
 
-      <p className={`${inter.className} max-w-xl text-base md:text-xl mt-8 dark:text-neutral-200`}>
+      <p className={`${inter.className} max-w-xl text-base md:text-xl mt-4 md:mt-8 dark:text-neutral-200 `}>
         {t("subtitle")}
       </p>
 
