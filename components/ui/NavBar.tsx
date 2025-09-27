@@ -20,11 +20,10 @@ import {
 } from "@/components/ui/select"
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
-
 import { useState } from "react";
 
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({classes = ''}) {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -35,17 +34,20 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <Select onValueChange={handleChange} defaultValue={locale}>
-      <SelectTrigger className="w-[70px] border-white text-white">
-        <SelectValue />
-      </SelectTrigger>
-      <SelectContent className="border-white text-white bg-black/60">
-        <SelectItem value="en">EN</SelectItem>
-        <SelectItem value="he">HE</SelectItem>
-      </SelectContent>
-    </Select>
+    <div className={classes}>
+      <Select onValueChange={handleChange} defaultValue={locale}>
+        <SelectTrigger className={`${classes} border-white text-white`}>
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent className="border-white text-white bg-black/60">
+          <SelectItem value="en">EN</SelectItem>
+          <SelectItem value="he">HE</SelectItem>
+        </SelectContent>
+      </Select>      
+    </div>
+
   );
-}
+};
 
 
 export function NavbarDemo() {
@@ -77,7 +79,7 @@ export function NavbarDemo() {
           </div>
 
           <div className="flex items-center gap-4">
-            <LanguageSwitcher />
+            <LanguageSwitcher/>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
         </NavBody>
@@ -88,7 +90,7 @@ export function NavbarDemo() {
             <NavbarLogo />
 
             <div className="flex items-center gap-4">
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
               <MobileNavToggle
                 isOpen={isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -126,6 +128,9 @@ export function NavbarDemo() {
               >
                 Book a call
               </NavbarButton>
+              <LanguageSwitcher classes="w-full" />
+
+
             </div>
           </MobileNavMenu>
         </MobileNav>

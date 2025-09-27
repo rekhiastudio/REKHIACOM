@@ -72,7 +72,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     <motion.div
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("fixed inset-x-0 top-20 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-10 md:top-20 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -238,25 +238,18 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex  space-x-4 px-2 text-sm font-normal text-black"
+      className="relative z-20 flex  pr-8 text-sm font-normal text-black "
     >
-      {/* <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      /> */}
-
       <Image
           src="/logo-512.png"   // ruta relativa a /public
           alt="Rekhia Logo"
           width={120}
           height={120}
           priority
-          className="h-15 w-auto "
+          className="h-15 w-auto"
       />
 
-      <div className="pt-3">
+      <div className="pt-3 ml-5">
         <span className={`${notable.className} text-xl text-black dark:text-white`}>REKHIA</span>
       </div>
     </a>

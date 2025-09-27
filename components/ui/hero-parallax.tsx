@@ -9,38 +9,248 @@ import {
 } from "motion/react";
 import { inter } from "@/lib/fonts";
 import CtaButton from "./cta-button";
-import { useTranslations } from 'next-intl';
-import { span } from "motion/react-client";
+import { useTranslations, useLocale } from 'next-intl';
 
 
-export const HeroParallax = ({
-  products,
-}: {
-  products: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  }[];
-}) => {
+// export const HeroParallax = ({
+//   products,
+// }: {
+//   products: {
+//     title: string;
+//     link: string;
+//     thumbnail: string;
+//   }[];
+// }) => {
+//   const firstRow = products.slice(0, 5);
+//   const secondRow = products.slice(5, 10);
+//   const thirdRow = products.slice(10, 15);
+//   const ref = React.useRef(null);
+//   const { scrollYProgress } = useScroll({
+//     target: ref,
+//     offset: ["start start", "end start"],
+//   });
+
+//   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+
+//   const translateX = useSpring(
+//     useTransform(scrollYProgress, [0, 1], [0, 1000]),
+//     springConfig
+//   );
+//   const translateXReverse = useSpring(
+//     useTransform(scrollYProgress, [0, 1], [0, -1000]),
+//     springConfig
+//   );
+//   const rotateX = useSpring(
+//     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+//     springConfig
+//   );
+//   const opacity = useSpring(
+//     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+//     springConfig
+//   );
+//   const rotateZ = useSpring(
+//     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+//     springConfig
+//   );
+//   const translateY = useSpring(
+//     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+//     springConfig
+//   );
+//   return (
+//     <div
+//       ref={ref}
+//       className="h-[250vh] pt-40 p-12 md:p-16 md:pt-[15rem] antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+//     >
+//       <Header /> 
+      
+//       <motion.div
+//         style={{
+//           rotateX,
+//           rotateZ,
+//           translateY,
+//           opacity,
+//         }}
+//         className=""
+//       >
+//         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+//           {firstRow.map((product) => (
+//             <ProductCard
+//               product={product}
+//               translate={translateX}
+//               key={product.title}
+//             />
+//           ))}
+//         </motion.div>
+//         <motion.div className="flex flex-row  mb-20 space-x-20 ">
+//           {secondRow.map((product) => (
+//             <ProductCard
+//               product={product}
+//               translate={translateXReverse}
+//               key={product.title}
+//             />
+//           ))}
+//         </motion.div>
+//         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+//           {thirdRow.map((product) => (
+//             <ProductCard
+//               product={product}
+//               translate={translateX}
+//               key={product.title}
+//             />
+//           ))}
+//         </motion.div>
+//       </motion.div>
+//     </div>
+//   );
+// };
+
+// export const Header = () => {
+
+//   const t = useTranslations('Hero');  
+
+//   return (
+//     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 ">
+//       <h1 className="text-3xl md:text-6xl font-bold dark:text-white">
+//         {/* Rekhia: The UX & Software <br className="hidden md:block" /> Development Studio */}
+//           {t.rich('title', {
+//             cl: (chunks) => (
+//               <span className="text-red-500">
+//                 {chunks}
+//               </span>
+//             ),
+//             break: (chunks) => (      
+//             <>
+//                 <br className="hidden md:block" />
+//                 {chunks}
+//             </>),
+//             ltr: (chunks) => (
+//               <span className="text-red-500" dir="ltr">
+//                 {chunks}
+//               </span>
+//             ),
+//           })}
+//       </h1>
+//       <p className={`${inter.className} max-w-xl text-base md:text-xl mt-8 dark:text-neutral-200`}>
+//         {/* We build beautiful products with the latest technologies and frameworks.
+//         We are a team of passionate developers and designers that love to build
+//         amazing products. */}
+
+//         {t('subtitle')}
+
+//       </p>
+
+//       <CtaButton text={t('cta')} classes="hover:border-red-500 transition-all duration-500 bg-white text-black mt-10 font-bold"/>
+//     </div>
+//   );
+// };
+
+
+
+// export const ProductCard = ({
+//   product,
+//   translate,
+// }: {
+//   product: {
+//     title: string;
+//     link: string;
+//     thumbnail: string;
+//   };
+//   translate: MotionValue<number>;
+// }) => {
+//   return (
+//     <motion.div
+//       style={{
+//         x: translate,
+//       }}
+//       whileHover={{
+//         y: -20,
+//       }}
+//       key={product.title}
+//       className="group/product h-96 w-[30rem] relative shrink-0"
+//     >
+//       <a
+//         href={product.link}
+//         className="block group-hover/product:shadow-2xl "
+//       >
+//         <img
+//           src={product.thumbnail}
+//           height="600"
+//           width="600"
+//           className="object-cover object-left-top absolute h-full w-full inset-0"
+//           alt={product.title}
+//         />
+//       </a>
+//       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+//       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+//         {product.title}
+//       </h2>
+//     </motion.div>
+//   );
+// };
+
+
+type Product = { title: string; link: string; thumbnail: string };
+
+export const HeroParallax = ({ products }: { products: Product[] }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const ref = React.useRef(null);
+
+  const ref = React.useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
+  const locale = useLocale();
+  const isRTL = locale === "he";
+
+  console.log("Locale:", locale, "isRTL:", isRTL);
+
+  // Distancia horizontal: usa un valor menor en móviles para no “sacar” las filas de pantalla.
+  // (Puedes tunear este número si quieres aún más suavidad).
+  const DIST = 900;
+
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
+
+  // const translateX = useSpring(
+  //   useTransform(
+  //     scrollYProgress,
+  //     [0, 1],
+  //     [0, isRTL ? -DIST : DIST] // invierte el signo en RTL
+  //   ),
+  //   springConfig
+  // );
+
+  // const translateXReverse = useSpring(
+  //   useTransform(
+  //     scrollYProgress,
+  //     [0, 1],
+  //     [0, isRTL ? DIST : -DIST] // invierte al revés en RTL
+  //   ),
+  //   springConfig
+  // );
+
+  // ⬅️➡️ Dirección consciente de RTL
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(
+      scrollYProgress,
+      [0, 1],
+      [0, DIST] // invierte el signo en RTL
+    ),
     springConfig
   );
+
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(
+      scrollYProgress,
+      [0, 1],
+      [0,  -DIST] // invierte al revés en RTL
+    ),
     springConfig
   );
+
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
     springConfig
@@ -57,47 +267,42 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
       className="h-[250vh] pt-40 p-12 md:p-16 md:pt-[15rem] antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
-      <Header /> 
-      
+      <Header />
+
       <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-        className=""
+        style={{ rotateX, rotateZ, translateY, opacity }}
+        className={`${isRTL && 'mt-40 md:mt-0'}`}
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
+        {/* Fila 1 */}
+        <motion.div
+          className={`flex ${isRTL ? "flex-row" : "flex-row-reverse"} gap-20 mb-20`}
+        >
+          {firstRow.map((p) => (
+            <ProductCard key={p.title} product={p} translate={translateX} />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
+
+        {/* Fila 2 (invertida respecto a la 1) */}
+        <motion.div
+          className={`flex ${isRTL ? "flex-row-reverse" : "flex-row"} gap-20 mb-20`}
+        >
+          {secondRow.map((p) => (
+            <ProductCard key={p.title} product={p} translate={translateXReverse} />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
+
+        {/* Fila 3 igual que la 1 */}
+        <motion.div
+          className={`flex ${isRTL ? "flex-row" : "flex-row-reverse"} gap-20`}
+        >
+          {thirdRow.map((p) => (
+            <ProductCard key={p.title} product={p} translate={translateX} />
           ))}
         </motion.div>
       </motion.div>
@@ -106,73 +311,52 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
-
-  const t = useTranslations('Hero');  
-
+  const t = useTranslations("Hero");
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0 ">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-3xl md:text-6xl font-bold dark:text-white">
-        {/* Rekhia: The UX & Software <br className="hidden md:block" /> Development Studio */}
-          {t.rich('title', {
-            cl: (chunks) => (
-              <span className="text-red-500">
-                {chunks}
-              </span>
-            ),
-            break: (chunks) => (      
+        {t.rich("title", {
+          cl: (chunks) => <span className="text-red-500">{chunks}</span>,
+          break: (chunks) => (
             <>
-                <br className="hidden md:block" />
-                {chunks}
-            </>),
-            ltr: (chunks) => (
-              <span className="text-red-500" dir="ltr">
-                {chunks}
-              </span>
-            ),
-          })}
+              <br className="hidden md:block" />
+              {chunks}
+            </>
+          ),
+          ltr: (chunks) => (
+            <span className="text-red-500" dir="ltr">
+              {chunks}
+            </span>
+          ),
+        })}
       </h1>
+
       <p className={`${inter.className} max-w-xl text-base md:text-xl mt-8 dark:text-neutral-200`}>
-        {/* We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products. */}
-
-        {t('subtitle')}
-
+        {t("subtitle")}
       </p>
 
-      <CtaButton text={t('cta')} classes="hover:border-red-500 transition-all duration-500 bg-white text-black mt-10 font-bold"/>
+      <CtaButton
+        text={t("cta")}
+        classes="hover:border-red-500 transition-all duration-500 bg-white text-black mt-10 font-bold"
+      />
     </div>
   );
 };
-
-
 
 export const ProductCard = ({
   product,
   translate,
 }: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  };
+  product: Product;
   translate: MotionValue<number>;
 }) => {
   return (
     <motion.div
-      style={{
-        x: translate,
-      }}
-      whileHover={{
-        y: -20,
-      }}
-      key={product.title}
+      style={{ x: translate }}
+      whileHover={{ y: -20 }}
       className="group/product h-96 w-[30rem] relative shrink-0"
     >
-      <a
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      <a href={product.link} className="block group-hover/product:shadow-2xl">
         <img
           src={product.thumbnail}
           height="600"
@@ -181,7 +365,7 @@ export const ProductCard = ({
           alt={product.title}
         />
       </a>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none" />
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>
