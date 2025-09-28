@@ -5,7 +5,7 @@ import { HeroParallax } from "../ui/hero-parallax";
 
 export function HeroParallaxDemo() {
   return (
-      <section className="w-full overflow-hidden">
+      <section id="hero" className="w-full overflow-hidden">
           <HeroParallax products={products} />;
       </section>
   )

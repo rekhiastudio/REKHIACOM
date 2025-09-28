@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com",
+        pathname: "/**", // permite cualquier path de ese dominio
+      },
+    ],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

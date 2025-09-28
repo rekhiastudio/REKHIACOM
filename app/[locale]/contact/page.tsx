@@ -10,7 +10,7 @@ export default function Contact() {
     const t = useTranslations("Contact");
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2  min-h-screen  bg-black">
+    <main className="grid grid-cols-1 md:grid-cols-2  min-h-screen  bg-black">
         <section className="flex fle-col pt-[12rem] pb-10 md:pt-10 items-center justify-center bg-black">
             <ContactForm />
         </section>
@@ -76,6 +76,6 @@ export default function Contact() {
                 </div>
             </div>
         </section>
-    </div>
+    </main>
   );
 };

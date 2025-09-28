@@ -8,7 +8,7 @@ const Services = () => {
     const t = useTranslations('Services');
 
   return (
-    <section className='flex flex-col space-y-24 w-full bg-white p-10 md:p-30 '>
+    <section id="services" className='flex flex-col space-y-24 w-full bg-white p-10 md:p-30 '>
         <h2 className={`${inter.className} text-4xl text-center md:px-16 w-full mt-10 md:mt-0`}>
             {t('title')}
         </h2>

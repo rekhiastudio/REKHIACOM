@@ -78,6 +78,52 @@
       "title": "Get In Touch",
       "desc": "Prefer to reach us directly? You can send us an email or connect with us through our social channels."
     }
-  }
+  },
+  "pricing": {
+      "support": {
+        "title": "Pricing",
+        "subtitle": "Choose the plan that best fits your needs. Whether you're an individual or a business, we have options for everyone.",
+        "tier1": {
+          "title": "Basic",
+          "price": "$59",
+          "subtitle": "",
+          "features": [
+              "Constant communication with a representative",
+              "Up to 5 hours of work / month",
+              "Bug fixes & small tweaks",
+              "Security patches & CMS updates",
+              "Weekly automated backups",
+              "Basic performance check (monthly)"
+          ]
+        },
+        "tier2": {
+          "title": "Standard",
+          "price": "$129",
+          "subtitle": "Everything from Basic +",
+          "features": [
+              "Up to 12 hours of work / month",
+              "Design & UX micro-improvements",
+              "Monthly performance sprint (Core Web Vitals)",
+              "1 A/B test or experiment / month",
+              "Light SEO tech (sitemaps, meta, schema)",
+              "Monthly progress report + next steps"
+          ]
+        },
+        "tier3": {
+          "title": "Premium",
+          "price": "$299",
+           "subtitle": "Everything from Standard +",
+          "features": [
+              "Up to 24 hours of work / month",
+              "New components/pages each month",
+              "E-commerce support (checkout, catalog, promos)",
+              "3rd-party integrations (payments, analytics, CRM)",
+              "Tech SEO (indexing, redirects, perf budgets)",
+              "Weekly check-in + quarterly roadmap session"
+          ]
+        },
+        "cta": "Contact Sales"
+      }
+    }
 
 }
