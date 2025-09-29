@@ -39,7 +39,7 @@ export default function Pricing() {
 
   return (
     <main className="flex flex-col min-h-screen bg-black">
-      <section className="flex flex-col items-center justify-center py-10 pt-[13rem] md:pt-[15rem] px-5 md:px-20">
+      <section id="header" className="flex flex-col items-center justify-center py-10 pt-[13rem] md:pt-[15rem] px-5 md:px-20">
         <h1 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200 text-center mb-5">
           {t("title")}
         </h1>
@@ -48,8 +48,7 @@ export default function Pricing() {
         </p>
       </section>
 
-      <section id="service-cards" className="flex flex-col md:flex-row items-center justify-center gap-16 py-10 pb-36">
-        {/* Tier 1 - Basic */}
+      <section id="service-cards" className="flex flex-col xl:flex-row items-center justify-center gap-16 py-10 pb-36">
         <ServiceCardSpotligh
           title={t("tier1.title")}
           price={t("tier1.price")}
@@ -58,7 +57,6 @@ export default function Pricing() {
           {...darkCardRedWhite}
         />
 
-        {/* Tier 2 - Standard (Featured) */}
         <ServiceCardSpotligh
           title={t("tier2.title")}
           price={t("tier2.price")}
@@ -69,7 +67,6 @@ export default function Pricing() {
           {...featuredContrast}
         />
 
-        {/* Tier 3 - Premium */}
         <ServiceCardSpotligh
           title={t("tier3.title")}
           price={t("tier3.price")}

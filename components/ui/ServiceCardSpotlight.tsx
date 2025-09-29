@@ -23,7 +23,7 @@ export function ServiceCardSpotligh({
   return (
     <CardSpotlight
       className={cn(
-        "relative h-[560px] w-[360px] p-6 border-2",
+        "relative  w-[360px] p-6 pb-[4rem] xl:pb-0] xl:h-[600px] border-2",
         isFeatured
           ? "bg-neutral-200 text-neutral-900 border border-neutral-300 shadow-[0_1px_0_rgba(0,0,0,0.04),inset_0_0_0_1px_rgba(255,255,255,0.6)]"
           : "bg-[rgba(17,17,17,0.8)] text-white border border-neutral-800 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.04)]",

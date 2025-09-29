@@ -74,7 +74,7 @@ export default function ContactForm() {
     };
 
   return (
-    <div className=" shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+    <div className=" shadow-input mx-auto w-full max-w-md rounded-none bg-white px-4  md:px-8 dark:bg-black ">
       <h1 className="text-2xl font-bold text-neutral-800 dark:text-neutral-200 ">
         {t("title")}
       </h1>
@@ -96,7 +96,7 @@ export default function ContactForm() {
         onOpenChange={(o) => setError(o)}
       />
 
-      <form className="my-8" onSubmit={handleSubmit(onSubmit)}>
+      <form className="my-7" onSubmit={handleSubmit(onSubmit)}>
         {/* First & Last name */}
         <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
           <LabelInputContainer>
@@ -137,7 +137,7 @@ export default function ContactForm() {
           </Label>
           <Input
             id="email"
-            placeholder="projectmayhem@fc.com"
+            placeholder="myemail@example.com"
             type="email"
             {...register("email", {
               required: "Email is required",
@@ -175,7 +175,7 @@ export default function ContactForm() {
               success={success}
               bTitle={bTitle}
               error={error}
-              className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white"
+              className=" group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white"
             >
               {t("form.submit")}
             </Button>
