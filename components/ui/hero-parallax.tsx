@@ -312,7 +312,7 @@ export const Header = () => {
   const t = useTranslations("Hero");
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-[1.7rem] md:text-6xl font-bold dark:text-white">
+      <h1 className="text-[1.7rem] md:text-6xl font-bold text-white">
         {t.rich("title", {
           cl: (chunks) => <span className="text-red-500">{chunks}</span>,
           break: (chunks) => (
@@ -329,7 +329,7 @@ export const Header = () => {
         })}
       </h1>
 
-      <p className={`${inter.className} max-w-xl text-base md:text-xl mt-4 md:mt-8 dark:text-neutral-200 `}>
+      <p className={`${inter.className} max-w-xl text-base md:text-xl mt-4 md:mt-8 text-neutral-200 `}>
         {t("subtitle")}
       </p>
 

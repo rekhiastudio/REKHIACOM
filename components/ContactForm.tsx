@@ -74,11 +74,11 @@ export default function ContactForm() {
     };
 
   return (
-    <div className=" shadow-input mx-auto w-full max-w-md rounded-none bg-white px-4  md:px-8 dark:bg-black ">
-      <h1 className="text-2xl font-bold text-neutral-800 dark:text-neutral-200 ">
+    <div className=" shadow-input mx-auto w-full max-w-md rounded-none px-4 md:px-8 bg-black">
+      <h1 className="text-2xl font-bold text-neutral-200 ">
         {t("title")}
       </h1>
-      <p className="mt-2 max-w-sm text-md text-neutral-600 dark:text-neutral-300">
+      <p className="mt-2 max-w-sm text-md text-neutral-300">
         {t("subtitle")}
       </p>
 

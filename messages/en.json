@@ -124,6 +124,71 @@
         },
         "cta": "Contact Sales"
       }
-    }
+    },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "items1": [
+      {
+        "title": "What kinds of projects do you take on?",
+        "desc": "Websites, landing pages, e-commerce, web apps, and redesigns. We also handle migrations, evaluated case-by-case based on complexity."
+      },
+      {
+        "title": "Can you design from scratch or work with an existing design?",
+        "desc": "Both. We can create UX/UI from scratch or implement an existing design (e.g., Figma)."
+      },
+      {
+        "title": "What does your process look like?",
+        "desc": "Kickoff → brief & goals → wireframes → UI → development → QA → delivery. Communication stays active throughout."
+      },
+      {
+        "title": "How many rounds of revision are included?",
+        "desc": "Between 1–3 rounds per phase depending on project complexity and budget. Extra rounds can be added and quoted if needed."
+      },
+      {
+        "title": "How long does a project usually take?",
+        "desc": "Typical ranges (not hard deadlines): Landing Page 2–3 weeks; Gold Website (5+ pages) 4–6 weeks; Basic e-commerce 6–10 weeks. Every project gets its own brief and timeline."
+      },
+      {
+        "title": "How do we communicate during the project?",
+        "desc": "Discord for quick messaging and Notion for tasks, planning, and documentation."
+      },
+      {
+        "title": "What’s included in the monthly support plans?",
+        "desc": "Hours you can use for bug fixes, improvements, new sections, performance, light technical SEO, and small integrations—scaled to your plan."
+      }
+    ],
+    "items2": [
+      {
+        "title": "What happens if I use up all my plan hours?",
+        "desc": "Anything beyond your plan is billed at the standard hourly rate (rounded by full hours). You can also upgrade your plan."
+      },
+      {
+        "title": "Do you handle hosting, deployments, backups, and security?",
+        "desc": "Yes. We typically deploy on Vercel and include monitoring/backups appropriate to the plan. We can extend coverage if needed."
+      },
+      {
+        "title": "What tech stack do you use?",
+        "desc": "Primarily Next.js, Tailwind, shadcn/ui, and Vercel for deployment. We can also work with React (vanilla) or Vue.js when required."
+      },
+      {
+        "title": "How do payments and billing work?",
+        "desc": "Monthly plans are paid via Stripe or bank transfer. Fixed-scope projects are billed by milestones; usually an upfront payment before UI work."
+      },
+      {
+        "title": "Are there extra costs (hosting, licenses, third-party tools)?",
+        "desc": "It depends. We can cover some services (e.g., hosting) or integrate third-party tools. Details are clarified in the proposal."
+      },
+      {
+        "title": "Do you offer post-launch support or warranty?",
+        "desc": "Yes. Fixed-scope projects include 1 month of the Basic plan at no cost after delivery. After that, you can continue with any plan."
+      },
+      {
+        "title": "Do you support multilingual sites and technical SEO?",
+        "desc": "Yes. We handle i18n, hreflang, metadata, and sitemaps by default. We can extend into performance work (Core Web Vitals) and reporting."
+      }
+    ]
+  }
 
 }

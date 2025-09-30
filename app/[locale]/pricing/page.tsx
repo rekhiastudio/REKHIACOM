@@ -5,7 +5,6 @@ import { ServiceCardSpotligh } from "@/components/ui/ServiceCardSpotlight";
 import CTA from "@/components/ui/cta-prefooter";
 
 export default function Pricing() {
-
   const t = useTranslations("pricing.support");
 
   const darkCardRedWhite = {
@@ -40,10 +39,10 @@ export default function Pricing() {
   return (
     <main className="flex flex-col min-h-screen bg-black">
       <section id="header" className="flex flex-col items-center justify-center py-10 pt-[13rem] md:pt-[15rem] px-5 md:px-20">
-        <h1 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200 text-center mb-5">
+        <h1 className="text-3xl font-bold text-neutral-200 text-center mb-5">
           {t("title")}
         </h1>
-        <p className="max-w-2xl text-center text-neutral-600 dark:text-neutral-300">
+        <p className="max-w-2xl text-center text-neutral-300">
           {t("subtitle")}
         </p>
       </section>

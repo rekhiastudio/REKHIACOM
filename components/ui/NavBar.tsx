@@ -45,7 +45,6 @@ export function LanguageSwitcher({classes = ''}) {
         </SelectContent>
       </Select>      
     </div>
-
   );
 };
 
@@ -62,7 +61,7 @@ export function NavbarDemo() {
     },
     {
       name: "FAQ",
-      link: "#faq",
+      link: "/faq",
     },
   ];
  
@@ -80,7 +79,7 @@ export function NavbarDemo() {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher/>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <NavbarButton variant="primary">Get in Touch</NavbarButton>
           </div>
         </NavBody>
  
@@ -108,19 +107,12 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                className="relative text-neutral-300"
               >
                 <span className="block">{item.name}</span>
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              {/* <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton> */}
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -129,8 +121,6 @@ export function NavbarDemo() {
                 Book a call
               </NavbarButton>
               <LanguageSwitcher classes="w-full" />
-
-
             </div>
           </MobileNavMenu>
         </MobileNav>

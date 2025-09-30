@@ -12,7 +12,7 @@ const TimelineDemo = () => {
       title: t('step1.title'),
       content: (
         <div>
-          <p className="text-xs font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+          <p className="text-xs font-normal md:text-base text-neutral-200">
               {t('step1.desc')}
           </p>
 
@@ -53,7 +53,7 @@ const TimelineDemo = () => {
         title: t('step2.title'),
         content: (
           <div>
-            <p className="mb-8 text-xs font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+            <p className="mb-8 text-xs font-normal md:text-base text-neutral-200">
                 {t('step2.desc')}
             </p>
             <div className="grid grid-cols-2 gap-4">
@@ -93,7 +93,7 @@ const TimelineDemo = () => {
         title: t('step3.title'),
         content: (
           <div>
-            <p className="mb-4 text-xs font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+            <p className="mb-4 text-xs font-normal md:text-base text-neutral-200">
               {t('step3.desc')}
             </p>
             <div className="mb-20">
@@ -127,7 +127,7 @@ const TimelineDemo = () => {
         title: t('step4.title'),
         content: (
           <div>
-            <p className="mb-20 text-xs font-normal text-neutral-800 md:text-base dark:text-neutral-200">
+            <p className="mb-20 text-xs font-normal  md:text-base text-neutral-200">
                 {t('step4.desc')}
             </p>
             <div className="grid grid-cols-2 gap-4">
