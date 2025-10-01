@@ -21,6 +21,7 @@ import {
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { useState } from "react";
+import Link from "next/link";
 
 export function LanguageSwitcher({classes = ''}) {
   const router = useRouter();
@@ -29,12 +30,12 @@ export function LanguageSwitcher({classes = ''}) {
 
   const handleChange = (value: string) => {
     // Redirige a la misma ruta, pero cambiando el locale
-    router.replace(pathname, { locale: value });
+    router.push(pathname, { locale: value });
   };
 
   return (
     <div className={classes}>
-      <Select onValueChange={handleChange} value={locale}>
+      <Select onValueChange={handleChange} defaultValue={locale}>
         <SelectTrigger className={`${classes} border-white text-white`}>
           <SelectValue />
         </SelectTrigger>
