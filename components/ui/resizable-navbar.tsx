@@ -12,7 +12,8 @@ import {
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { notable, inter } from '@/lib/fonts'
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 
 interface NavbarProps {

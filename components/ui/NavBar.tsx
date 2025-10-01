@@ -21,7 +21,7 @@ import {
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export function LanguageSwitcher({classes = ''}) {
   const router = useRouter();
@@ -30,12 +30,12 @@ export function LanguageSwitcher({classes = ''}) {
 
   const handleChange = (value: string) => {
     // Redirige a la misma ruta, pero cambiando el locale
-    router.push(pathname, { locale: value });
+    router.replace(pathname, { locale: value });
   };
 
   return (
     <div className={classes}>
-      <Select onValueChange={handleChange} defaultValue={locale}>
+      <Select onValueChange={handleChange} value={locale}>
         <SelectTrigger className={`${classes} border-white text-white`}>
           <SelectValue />
         </SelectTrigger>
@@ -103,14 +103,14 @@ export function NavbarDemo() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-neutral-300"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
@@ -118,7 +118,7 @@ export function NavbarDemo() {
                 variant="primary"
                 className="w-full"
               >
-                Book a call
+                Get in Touch
               </NavbarButton>
               <LanguageSwitcher classes="w-full" />
             </div>
