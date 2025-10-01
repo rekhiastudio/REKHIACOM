@@ -28,10 +28,10 @@ export default function Faq(){
 
       <section id="questions" className="grid grid-cols-1 flex-1 h-full md:grid-cols-2 pb-40">
         <div className={`flex pt-16 ${isRTL ? "justify-end pl-26" : "justify-end pr-26"}`}>
-          <FaqAccordion items={items1}/>
+          <FaqAccordion items={items1} isRTL={isRTL}/>
         </div>
         <div className={`flex pt-16 ${isRTL ? "justify-start pr-26" : "justify-start pl-26"}`}>
-          <FaqAccordion items={items2}/>
+          <FaqAccordion items={items2} isRTL={isRTL}/>
         </div>
       </section>
 

@@ -7,7 +7,7 @@ import {
 import { inter } from "@/lib/fonts"
 
 
-export function FaqAccordion({items}) {
+export function FaqAccordion({items, isRTL = false}) {
 
 
   return (
@@ -20,9 +20,13 @@ export function FaqAccordion({items}) {
         {items.map((item, index) => {
             return (
                 <AccordionItem key={index} value={item.title}>
-                        <AccordionTrigger className="text-xl">{item.title}</AccordionTrigger>
+                        <AccordionTrigger className={`text-xl leading-relaxed ${
+                                isRTL ? "text-right" : "text-left"
+                              }`}>{item.title}</AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
-                            <p className="text-[1rem]">
+                            <p
+                              className={`text-[1rem]`}
+                            >
                                 {item.desc}
                             </p>
                         </AccordionContent>

@@ -1,8 +1,7 @@
 import React from 'react'
 import { notable, inter } from '@/lib/fonts'
 import Image from 'next/image'
-import CtaButton from './cta-button'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 // // bg-[#141414]
 
 export const Footer = () => {
@@ -41,9 +40,9 @@ export const Footer = () => {
           <div className="flex flex-col space-y-6">
             {/* usa gap-x-* en lugar de space-x-* */}
             <ul className="flex gap-x-8 justify-center md:justify-start">
-              <li><Link className="text-sm hover:underline" href="#faq">FAQ</Link></li>
+              <li><Link className="text-sm hover:underline" href="/faq">FAQ</Link></li>
               <li><Link className="text-sm hover:underline" href="#about">About</Link></li>
-              <li><Link className="text-sm hover:underline" href="#contact">Contact</Link></li>
+              <li><Link className="text-sm hover:underline" href="/contact">Contact</Link></li>
             </ul>
 
             <ul className="flex gap-x-8 justify-center md:justify-start">
