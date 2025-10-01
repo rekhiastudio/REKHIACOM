@@ -26,11 +26,11 @@ export default function Faq(){
         </p>
       </section>
 
-      <section id="questions" className="grid grid-cols-1 flex-1 h-full md:grid-cols-2 pb-40">
-        <div className={`flex pt-16 ${isRTL ? "justify-end pl-26" : "justify-end pr-26"}`}>
+      <section id="questions" className="grid grid-cols-1 flex-1 h-full xl:grid-cols-2 pb-40">
+        <div className={`flex justify-center px-10 pt-16 ${isRTL ? "xl:justify-end xl:pl-16" : "xl:justify-end xl:pr-16"} `}>
           <FaqAccordion items={items1} isRTL={isRTL}/>
         </div>
-        <div className={`flex pt-16 ${isRTL ? "justify-start pr-26" : "justify-start pl-26"}`}>
+        <div className={`flex justify-center px-10 pt-16 ${isRTL ? "xl:justify-start xl:pr-16" : "xl:justify-start xl:pl-16"}`}>
           <FaqAccordion items={items2} isRTL={isRTL}/>
         </div>
       </section>

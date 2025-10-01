@@ -8,13 +8,11 @@ import { inter } from "@/lib/fonts"
 
 
 export function FaqAccordion({items, isRTL = false}) {
-
-
   return (
     <Accordion
       type="single"
       collapsible
-      className="w-full text-neutral-300 max-w-[30rem] space-y-3"
+      className="w-full text-neutral-300 max-w-[30rem] space-y-3  "
       defaultValue={items[0].title}
     >
         {items.map((item, index) => {
