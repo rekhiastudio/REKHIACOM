@@ -2,8 +2,52 @@ import { FaqAccordion } from "@/components/ui/FaqAccordion"
 import { useTranslations } from "next-intl"
 import { useMessages } from "next-intl";
 import CTA from "@/components/ui/cta-prefooter";
-
 import { useLocale } from "next-intl";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo" });
+
+  return {
+    title: t("faq.title"),
+    description: t("faq.description"),
+    alternates: {
+      languages: {
+        en: "https://rekhia.com/en/faq",
+        he: "https://rekhia.com/he/faq"
+      }
+    },
+    openGraph: {
+      title: t("faq.title"),
+      description: t("faq.description"),
+      url: `https://rekhia.com/${locale}/faq`,
+      siteName: "Rekhia",
+      images: [
+        {
+          url: "https://rekhia.com/og-faq.png",
+          width: 1200,
+          height: 630,
+          alt: "Rekhia - FAQ"
+        }
+      ],
+      locale: locale === "he" ? "he_IL" : "en_US",
+      type: "website"
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("faq.title"),
+      description: t("faq.description"),
+      images: ["https://rekhia.com/og-faq.png"]
+    }
+  };
+}
 
 export default function Faq(){
   const t = useTranslations('faq');

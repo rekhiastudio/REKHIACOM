@@ -11,14 +11,20 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "assets.aceternity.com",
-        pathname: "/**", // permite cualquier path de ese dominio
-      },
-    ],
-  },
+  remotePatterns: [
+    {
+      protocol: "https",
+      hostname: "assets.aceternity.com",
+      pathname: "/**"
+    },
+    {
+      protocol: "https",
+      hostname: "aceternity.com",
+      pathname: "/**"
+    }
+  ]
+}
+
 };
 
 const withNextIntl = createNextIntlPlugin();

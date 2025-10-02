@@ -23,7 +23,11 @@ const CTA = () => {
           <h3 className={`${inter.className} text-2xl md:text-3xl`}>{t('title')}</h3>
           <p className={`${inter.className} text-md md:text-xl md:max-w-xl`}>{t('subtitle')}</p>
         </div>
-        <CtaButton text={t('button')} classes="hover:border-red-500 transition-all duration-500 bg-black text-white"/>
+        <CtaButton 
+          href='/contact'
+          text={t('button')} 
+          classes="hover:border-red-500 transition-all duration-500 bg-black text-white"
+        />
       </div>
     </section>
   )

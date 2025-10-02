@@ -79,7 +79,7 @@ export function NavbarDemo() {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher/>
-            <NavbarButton variant="primary">Get in Touch</NavbarButton>
+            <NavbarButton href="/contact" variant="primary">Get in Touch</NavbarButton>
           </div>
         </NavBody>
  

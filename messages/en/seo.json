@@ -1,0 +1,22 @@
+
+
+{
+  "home": {
+    "title": "Rekhia | UX, Web & App Studio",
+    "description": "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions with a multilingual approach."
+  },
+  
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with Rekhia for UX design, web & app development, and e-commerce solutions. Let’s build something amazing together."
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "description": "Explore Rekhia’s monthly support plans for UX design, web & app development, and e-commerce solutions. Choose the plan that fits your needs."
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about Rekhia’s UX design, web & app development, and e-commerce solutions. Find quick answers to common inquiries."
+  }
+
+}

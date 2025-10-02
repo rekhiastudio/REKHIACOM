@@ -9,9 +9,15 @@ export default getRequestConfig(async ({requestLocale}) => {
     ? requested
     : routing.defaultLocale;
 
+    const core = (await import(`../messages/${locale}.json`)).default;
+    const seo = (await import(`../messages/${locale}/seo.json`)).default;
+
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages: {
+      ...core,
+      seo // 
+    }
     // ...
   };
 });
