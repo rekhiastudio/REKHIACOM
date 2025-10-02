@@ -23,15 +23,15 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png" // para dispositivos Apple
   },
-    openGraph: {
+  openGraph: {
     title: "Rekhia | UX & Web Studio",
     description:
       "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions.",
-    url: "https://rekhia.com",
+    url: "https://www.rekhia.com",
     siteName: "Rekhia",
     images: [
       {
-        url: "https://rekhia.com/og-home.png",
+        url: "https://www.rekhia.com/og-home.png",
         width: 1200,
         height: 630,
         alt: "Rekhia Studio"
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Rekhia | UX & Web Studio",
     description:
       "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions.",
-    images: ["https://rekhia.com/og-home.png"]
+    images: ["https://www.rekhia.com/og-home.png"]
   }
 };
 

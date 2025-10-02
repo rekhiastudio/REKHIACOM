@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t("home.description"),
     alternates: {
       languages: {
-        en: "https://rekhia.com/en",
-        he: "https://rekhia.com/he"
+        en: "https://www.rekhia.com/en",
+        he: "https://www.rekhia.com/he"
       }
     },
     openGraph: {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Rekhia",
       images: [
         {
-          url: "https://rekhia.com/og-home.png",
+          url: "https://www.rekhia.com/og-home.png",
           width: 1200,
           height: 630,
           alt: "Rekhia Studio - Home"
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: t("home.title"),
       description: t("home.description"),
-      images: ["https://rekhia.com/og-home.png"]
+      images: ["https://www.rekhia.com/og-home.png"]
     }
   };
 }
