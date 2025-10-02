@@ -19,18 +19,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t("contact.description"),
     alternates: {
       languages: {
-        en: "https://rekhia.com/en/contact",
-        he: "https://rekhia.com/he/contact",
+        en: "https://www.rekhia.com/en/contact",
+        he: "https://www.rekhia.com/he/contact",
       },
     },
     openGraph: {
       title: t("contact.title"),
       description: t("contact.description"),
-      url: `https://rekhia.com/${locale}/contact`,
+      url: `https://www.rekhia.com/${locale}/contact`,
       siteName: "Rekhia",
       images: [
         {
-          url: "https://rekhia.com/og-contact.png",
+          url: "https://www.rekhia.com/og-contact.png",
           width: 1200,
           height: 630,
           alt: "Rekhia - Contact Page",
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: t("contact.title"),
       description: t("contact.description"),
-      images: ["https://rekhia.com/og-contact.png"],
+      images: ["https://www.rekhia.com/og-contact.png"],
     },
   };
 }

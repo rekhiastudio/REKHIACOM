@@ -18,18 +18,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t("pricing.description"),
     alternates: {
       languages: {
-        en: "https://rekhia.com/en/pricing",
-        he: "https://rekhia.com/he/pricing",
+        en: "https://www.rekhia.com/en/pricing",
+        he: "https://www.rekhia.com/he/pricing",
       },
     },
     openGraph: {
       title: t("pricing.title"),
       description: t("pricing.description"),
-      url: `https://rekhia.com/${locale}/pricing`,
+      url: `https://www.rekhia.com/${locale}/pricing`,
       siteName: "Rekhia",
       images: [
         {
-          url: "https://rekhia.com/og-pricing.png",
+          url: "https://www.rekhia.com/og-pricing.png",
           width: 1200,
           height: 630,
           alt: "Rekhia - Pricing Plans",
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: t("pricing.title"),
       description: t("pricing.description"),
-      images: ["https://rekhia.com/og-pricing.png"],
+      images: ["https://www.rekhia.com/og-pricing.png"],
     },
   };
 }
