@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: t("home.title"),
       description: t("home.description"),
-      url: `https://rekhia.com/${locale}`,
+      url: `https://www.rekhia.com/${locale}`,
       siteName: "Rekhia",
       images: [
         {
