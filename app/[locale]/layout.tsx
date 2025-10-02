@@ -17,11 +17,35 @@ export const metadata: Metadata = {
     default: "Rekhia | UX & Software Development Studio",
     template: "%s | Rekhia"
   },
-  description: "Rekhia delivers cutting-edge UX design, web & app development.",
+  description: "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions.",
   icons: {
     icon: "/favicon.ico", // icono por defecto
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png" // para dispositivos Apple
+  },
+    openGraph: {
+    title: "Rekhia | UX & Web Studio",
+    description:
+      "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions.",
+    url: "https://rekhia.com",
+    siteName: "Rekhia",
+    images: [
+      {
+        url: "https://rekhia.com/og-home.png",
+        width: 1200,
+        height: 630,
+        alt: "Rekhia Studio"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rekhia | UX & Web Studio",
+    description:
+      "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions.",
+    images: ["https://rekhia.com/og-home.png"]
   }
 };
 
