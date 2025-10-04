@@ -41,20 +41,15 @@ export const Footer = () => {
             {/* usa gap-x-* en lugar de space-x-* */}
             <ul className="flex gap-x-8 justify-center md:justify-start">
               <li><Link className="text-sm hover:underline" href="/faq">FAQ</Link></li>
-              <li><Link className="text-sm hover:underline" href="#about">About</Link></li>
+              <li><Link className="text-sm hover:underline" href="/docs/about">About</Link></li>
               <li><Link className="text-sm hover:underline" href="/contact">Contact</Link></li>
             </ul>
 
             <ul className="flex gap-x-8 justify-center md:justify-start">
-              <li><Link className="text-sm hover:underline" href="#privacy">Privacy Policy</Link></li>
-              <li><Link className="text-sm hover:underline" href="#terms">Terms of Service</Link></li>
+              <li><Link className="text-sm hover:underline" href="/docs/privacy-policy">Privacy Policy</Link></li>
+              <li><Link className="text-sm hover:underline" href="/docs/terms-of-service">Terms of Service</Link></li>
             </ul>
           </div>
-
-          {/* <CtaButton
-            text="Get in Touch"
-            classes="hidden md:block hover:border-red-500 transition-all duration-500 bg-white text-black mt-8 font-bold"
-          /> */}
         </div>
       </div>
 

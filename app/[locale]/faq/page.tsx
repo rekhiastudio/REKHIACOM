@@ -78,7 +78,6 @@ export default function Faq(){
           <FaqAccordion items={items2} isRTL={isRTL}/>
         </div>
       </section>
-
       <CTA/>
     </main>
   )

@@ -11,7 +11,6 @@ type Props = {
   params: Promise<{locale: string}>;
 };
 
-
 export const metadata: Metadata = {
   title: {
     default: "Rekhia | UX & Software Development Studio",
@@ -48,7 +47,6 @@ export const metadata: Metadata = {
     images: ["https://www.rekhia.com/og-home.png"]
   }
 };
-
 
 export default async function LocaleLayout({children, params}: Props) {
 
