@@ -10,12 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faq"
   ];
 
+  const docs = ["/docs/privacy-policy", "/docs/terms-of-service", "/docs/about"];
+
   const locales = ["en", "he"];
 
   const urls: MetadataRoute.Sitemap = [];
 
   for (const locale of locales) {
-    for (const route of routes) {
+    for (const route of [...routes, ...docs]) {
       urls.push({
         url: `${baseUrl}/${locale}${route}`,
         lastModified: new Date(),

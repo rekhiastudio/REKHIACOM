@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
 import { ServiceCardSpotligh } from "@/components/ui/ServiceCardSpotlight";
 import CTA from "@/components/ui/cta-prefooter";
-
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -11,11 +10,12 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "seo" });
+  const { default: seo } = await import(`@/messages/${locale}/seo.json`);
+  const pricingSeo = seo.pricing;
 
   return {
-    title: t("pricing.title"),
-    description: t("pricing.description"),
+    title: pricingSeo.title,
+    description: pricingSeo.description,
     alternates: {
       languages: {
         en: "https://www.rekhia.com/en/pricing",
@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: t("pricing.title"),
-      description: t("pricing.description"),
+      title: pricingSeo.title,
+      description: pricingSeo.description,
       url: `https://www.rekhia.com/${locale}/pricing`,
-      siteName: "Rekhia",
+      siteName: "Rekhia Studio",
       images: [
         {
           url: "https://www.rekhia.com/og-pricing.png",
@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("pricing.title"),
-      description: t("pricing.description"),
+      title: pricingSeo.title,
+      description: pricingSeo.description,
       images: ["https://www.rekhia.com/og-pricing.png"],
     },
   };

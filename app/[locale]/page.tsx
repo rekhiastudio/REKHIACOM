@@ -4,7 +4,6 @@ import Services from "@/components/ui/Services";
 import TimelineDemo from "@/components/ui/Timeline";
 import CTA from "@/components/ui/cta-prefooter";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 
 type Props = {
   params: { locale: string };
@@ -14,11 +13,12 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "seo" });
+  const { default: seo } = await import(`@/messages/${locale}/seo.json`);
+  const homeSeo = seo.home;
 
   return {
-    title: t("home.title"),
-    description: t("home.description"),
+    title: homeSeo.title,
+    description: homeSeo.description,
     alternates: {
       languages: {
         en: "https://www.rekhia.com/en",
@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       }
     },
     openGraph: {
-      title: t("home.title"),
-      description: t("home.description"),
+      title: homeSeo.title,
+      description: homeSeo.description,
       url: `https://www.rekhia.com/${locale}`,
       siteName: "Rekhia",
       images: [
@@ -43,8 +43,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("home.title"),
-      description: t("home.description"),
+      title: homeSeo.title,
+      description: homeSeo.description,
       images: ["https://www.rekhia.com/og-home.png"]
     }
   };

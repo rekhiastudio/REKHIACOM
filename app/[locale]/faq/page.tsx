@@ -4,8 +4,6 @@ import { useMessages } from "next-intl";
 import CTA from "@/components/ui/cta-prefooter";
 import { useLocale } from "next-intl";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -13,11 +11,12 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "seo" });
+  const { default: seo } = await import(`@/messages/${locale}/seo.json`);
+  const faqSeo = seo.faq;
 
   return {
-    title: t("faq.title"),
-    description: t("faq.description"),
+    title: faqSeo.title,
+    description: faqSeo.description,
     alternates: {
       languages: {
         en: "https://www.rekhia.com/en/faq",
@@ -25,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       }
     },
     openGraph: {
-      title: t("faq.title"),
-      description: t("faq.description"),
+      title: faqSeo.title,
+      description: faqSeo.description,
       url: `https://www.rekhia.com/${locale}/faq`,
-      siteName: "Rekhia",
+      siteName: "Rekhia Studio",
       images: [
         {
           url: "https://www.rekhia.com/og-faq.png",
@@ -42,8 +41,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("faq.title"),
-      description: t("faq.description"),
+      title: faqSeo.title,
+      description: faqSeo.description,
       images: ["https://www.rekhia.com/og-faq.png"]
     }
   };
@@ -60,7 +59,7 @@ export default function Faq(){
   const items2 = messages.faq.items2;
 
   return (
-    <main className="flex flex-col min-h-screen bg-black">
+    <main id="faq" className="flex flex-col min-h-screen bg-black">
       <section id="header" className="flex flex-col items-center justify-center  pt-[13rem] md:pt-[15rem] px-5 md:px-20">
         <h1 className="text-3xl font-bold text-neutral-200 text-center mb-5">
           {t("title")}

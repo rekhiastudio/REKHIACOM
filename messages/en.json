@@ -241,7 +241,7 @@
       "title": "Privacy Policy",
       "subtitle": "Effective Date",
       "lastUpdated": "Last updated: September 2025",
-      "effectiveDate": "September 31, 2025",
+      "effectiveDate": "October 6, 2025",
       "introduction": "Rekhia (“we,” “our,” “us”) is a brand and service line operated by Busdigital LLC, a Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). This Privacy Policy explains how we collect, use, share, secure, and retain personal data in connection with: (a) our public website (the “Site”); (b) sales and customer-support communications; and (c) delivery of our professional services (the “Services”). The Site is informational—there are no end-user accounts or logins. If you do not agree with this Policy, please do not use the Site or provide personal data.",
       "docContent": [
         {
@@ -306,7 +306,7 @@
             "File a complaint with your local supervisory authority."
           ],
           "content": [
-            "To exercise rights, email privacy@rekhia.com or contact@rekhia.com. We may need to verify your identity and, where we process data on behalf of a client, route your request to that client (the controller)."
+            "To exercise rights, email contact@rekhia.com. We may need to verify your identity and, where we process data on behalf of a client, route your request to that client (the controller)."
           ]
         },
         {
@@ -321,12 +321,12 @@
           "id": "changes-and-contact",
           "title": "Changes & Contact",
           "content": [
-            "We may update this Policy from time to time. The “Last updated” date will reflect the current version; material changes may be highlighted on the Site."
+            "We may update this Policy from time to time. The “Effective Date” date will reflect the current version; material changes may be highlighted on the Site."
           ],
           "list": [
             "Busdigital LLC (operating as Rekhia)",
             "1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110, USA",
-            "Email: contact@rekhia.com • privacy@rekhia.com"
+            "Email: contact@rekhia.com"
           ]
         }
       ]
@@ -336,7 +336,7 @@
       "title": "Terms of Service",
       "subtitle": "Effective Date",
       "lastUpdated": "Last updated: September 2025",
-      "effectiveDate": "September 31, 2025",
+      "effectiveDate": "October 6, 2025",
       "introduction": "Rekhia (\"we,\" \"our,\" \"us\") is a brand and service line operated by Busdigital LLC, a multi-member Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). These Terms govern your use of Rekhia’s website and your purchase of our professional services. By accepting a proposal/statement of work, paying an invoice or Stripe payment link, or otherwise engaging Rekhia (each an “Order”), you agree to these Terms. If you do not agree, do not use our Services.",
       "docContent": [
         {
@@ -413,17 +413,14 @@
       "title": "About Us",
       "subtitle": "Effective Date",
       "lastUpdated": "September 31, 2025",
-      "effectiveDate": "September 31, 2025",
+      "effectiveDate": "October 6, 2025",
       "introduction": "Rekhia is a UX & Software Studio dedicated to creating practical, elegant, and scalable digital experiences. We operate under Busdigital LLC, a Limited Liability Company registered in New Mexico, USA. Rekhia bridges design, technology, and strategy to help businesses establish a strong digital presence.",
       "docContent": [
         {
           "id": "what-we-do",
           "title": "What We Do",
-          "list": [
-            "UX/UI Design – Research, wireframing, user flows, and pixel-perfect interfaces.",
-            "Web & App Development – High-performance, responsive, and scalable solutions.",
-            "E-commerce Solutions – From storefront setup to secure payment integration.",
-            "Support Plans – Monthly subscriptions for ongoing improvements, maintenance, and optimization."
+          "content": [
+            "At Rekhia, we specialize in bridging design and technology to deliver complete digital solutions. Our work spans UX/UI design, web and app development, and e-commerce implementation—crafted to meet modern business needs with precision and scalability. Whether creating a new brand experience or improving an existing one, we combine user-centered design, technical excellence, and strategic insight to ensure that every project we undertake is both functional and future-ready."
           ]
         },
         {

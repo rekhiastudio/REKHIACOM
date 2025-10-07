@@ -1,6 +1,11 @@
-
-
 {
+
+  "default": {
+    "template": "%s | Rekhia",
+    "title": "Rekhia | UX & Software Development Studio",
+    "description": "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions with a multilingual approach."
+  },
+
   "home": {
     "title": "Rekhia | UX, Web & App Studio",
     "description": "Rekhia delivers cutting-edge UX design, web & app development, and e-commerce solutions with a multilingual approach."
@@ -17,6 +22,29 @@
   "faq": {
     "title": "FAQ",
     "description": "Frequently asked questions about Rekhia’s UX design, web & app development, and e-commerce solutions. Find quick answers to common inquiries."
+  },
+  "docs": {
+    "default": {
+      "imgUrl": "https://rekhia.com/og-docs.png",
+      "title": "Documentation",
+      "description": "Privacy Policy, Terms of Service, and About Rekhia."
+    },
+    "terms-of-service": {
+      "imgUrl": "https://rekhia.com/og-terms.png",
+      "title": "Terms of Service",
+      "description": "Read Rekhia’s Terms of Service for UX design, web & app development, and e-commerce solutions."
+    },
+    "privacy-policy": {
+      "imgUrl": "https://rekhia.com/og-privacy.png",
+      "title": "Privacy Policy",
+      "description": "Read Rekhia’s Privacy Policy to understand how we handle your information when you use our UX design, web & app development, and e-commerce solutions."
+    },
+    "about": {
+      "imgUrl": "https://rekhia.com/og-about.png",
+      "title": "About Us",
+      "description": "Learn more about Rekhia, our mission, values, and the team behind our cutting-edge UX design, web & app development, and e-commerce solutions."
+    
+    }
   }
 
 }

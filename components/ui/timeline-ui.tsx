@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, MotionValue, useSpring } from "motion/
 import { useLocale, useTranslations } from "next-intl";
 
 interface TimelineEntry {
+  id: number;
   title: string;
   content: React.ReactNode;
 }

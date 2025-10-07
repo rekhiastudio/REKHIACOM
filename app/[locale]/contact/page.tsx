@@ -2,9 +2,7 @@ import React from "react";
 import ContactForm from "@/components/ContactForm";
 import { useTranslations } from "next-intl";
 import { SocialsFloatingDockDemo } from "@/components/ui/SocialsFloatingDock";
-
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -12,11 +10,12 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "seo" });
+  const { default: seo } = await import(`@/messages/${locale}/seo.json`);
+  const contactSeo = seo.contact;
 
   return {
-    title: t("contact.title"),
-    description: t("contact.description"),
+    title: contactSeo.title,
+    description: contactSeo.description,
     alternates: {
       languages: {
         en: "https://www.rekhia.com/en/contact",
@@ -24,10 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: t("contact.title"),
-      description: t("contact.description"),
+      title: contactSeo.title,
+      description: contactSeo.description,
       url: `https://www.rekhia.com/${locale}/contact`,
-      siteName: "Rekhia",
+      siteName: "Rekhia Studio",
       images: [
         {
           url: "https://www.rekhia.com/og-contact.png",
@@ -41,8 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: t("contact.title"),
-      description: t("contact.description"),
+      title: contactSeo.title,
+      description: contactSeo.description,
       images: ["https://www.rekhia.com/og-contact.png"],
     },
   };

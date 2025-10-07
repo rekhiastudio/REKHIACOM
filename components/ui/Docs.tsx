@@ -1,9 +1,17 @@
 
 import { DocsSidebar } from "./DocsSidebar"
 import { DocsArticleRenderer } from "./DocsArticleRenderer"
+import { useTranslations, useMessages } from "next-intl";
 
-export default async function Docs( { params, t, messages, triggers } : { params: { locale: string; slug: string }, t: any, messages: any, triggers: any } ) {
-
+export default async function Docs( 
+{ params, t, messages, triggers } : 
+{ params: { 
+    locale: string; 
+    slug: string }, 
+    t: any, 
+    messages: any, 
+    triggers: any } 
+) {
   const { slug } = await params;
 
   const findArticle = (slug: string) => {
@@ -23,7 +31,6 @@ export default async function Docs( { params, t, messages, triggers } : { params
                 </div>
                 
 
-                {/* Aquí luego va el Accordion */}
                 <div className="w-[15rem] max-w-[15rem]">
                     <DocsSidebar triggers={triggers} current={slug}/>
                 </div>
