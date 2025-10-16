@@ -198,27 +198,30 @@
       "value": "privacy",
       "link": "privacy-policy",
       "triggerContent": [
-        { "text": "1. Information we collect", "hash": "information-we-collect" },
-        { "text": "2. How we use personal data", "hash": "how-we-use-personal-data" },
-        { "text": "3. Sharing of information", "hash": "sharing-of-information" },
-        { "text": "4. Data Security & Retention", "hash": "data-security-and-retention" },
-        { "text": "5. Your Rights", "hash": "your-rights" },
-        { "text": "6. Children's Privacy & Third-Party Links", "hash": "childrens-privacy-and-third-party-links" },
-        { "text": "7. Changes & Contact", "hash": "changes-and-contact" }
+        { "text": "1. Information We Collect", "hash": "information-we-collect" },
+        { "text": "2. How We Use Personal Data", "hash": "how-we-use-personal-data" },
+        { "text": "3. Sharing of Information", "hash": "sharing-of-information" },
+        { "text": "4. Data Controller and Data Processor Roles", "hash": "controller-and-processor-roles" },
+        { "text": "5. International Data Transfers", "hash": "international-data-transfers" },
+        { "text": "6. Data Security & Retention", "hash": "data-security-and-retention" },
+        { "text": "7. Your Rights", "hash": "your-rights" },
+        { "text": "8. Children’s Privacy & Third-Party Links", "hash": "childrens-privacy-and-third-party-links" },
+        { "text": "9. Changes & Contact", "hash": "changes-and-contact" }
       ]
     },
-    {
+   {
       "title": "Terms of Service",
       "value": "terms",
       "link": "terms-of-service",
       "triggerContent": [
-        { "text": "1. Services Provided", "hash": "services-provided" },
-        { "text": "2. Payment & Billing", "hash": "payment-and-billing" },
-        { "text": "3. Term, Cancellation & Changes", "hash": "term-cancellation-and-changes" },
-        { "text": "4. Client Responsibilities & Confidentiality", "hash": "client-responsibilities-and-confidentiality" },
-        { "text": "5. Intellectual Property & Third-Party Components", "hash": "intellectual-property-and-third-party-components" },
-        { "text": "6. Limitations, Disclaimers & Liability", "hash": "limitations-disclaimers-and-liability" },
-        { "text": "7. Governing Law, Disputes & Contact", "hash": "governing-law-disputes-and-contact" }
+        { "text": "1. Commercial Use of Service", "hash": "commercial-use-of-service" },
+        { "text": "2. Services and Orders", "hash": "services-and-orders" },
+        { "text": "3. Payment & Billing", "hash": "payment-and-billing" },
+        { "text": "4. Client Responsibilities & Approvals", "hash": "client-responsibilities-and-approvals" },
+        { "text": "5. Changes & Termination", "hash": "changes-and-termination" },
+        { "text": "6. Intellectual Property", "hash": "intellectual-property" },
+        { "text": "7. Limitations, Disclaimers & Liability", "hash": "limitations-disclaimers-and-liability" },
+        { "text": "8. Governing Law, Disputes & Contact", "hash": "governing-law-disputes-and-contact" }
       ]
     },
     {
@@ -226,122 +229,145 @@
       "value": "about",
       "link": "about",
       "triggerContent": [
-        { "text": "1. What we Do", "hash": "what-we-do" },
-        { "text": "2. Services", "hash": "services" },
-        { "text": "3. How we Work", "hash": "how-we-work" },
-        { "text": "4. How we Collaborate", "hash": "how-we-collaborate" },
-        { "text": "5. What we Value", "hash": "what-we-value" },
+        { "text": "1. Our Philosophy: Beyond the Code", "hash": "our-philosophy" },
+        { "text": "2. Who We Serve", "hash": "who-we-serve" },
+        { "text": "3. Our Core Services", "hash": "services" },
+        { "text": "4. Our Process: From Idea to Impact", "hash": "our-process" },
+        { "text": "5. Our Values in Action", "hash": "our-values-in-action" },
         { "text": "6. Legal & Contact", "hash": "legal-and-contact" }
       ]
     }
   ],
   "articles": [
     {
-      "link": "privacy-policy",
-      "title": "Privacy Policy",
-      "subtitle": "Effective Date",
-      "lastUpdated": "Last updated: September 2025",
-      "effectiveDate": "October 6, 2025",
-      "introduction": "Rekhia (“we,” “our,” “us”) is a brand and service line operated by Busdigital LLC, a Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). This Privacy Policy explains how we collect, use, share, secure, and retain personal data in connection with: (a) our public website (the “Site”); (b) sales and customer-support communications; and (c) delivery of our professional services (the “Services”). The Site is informational—there are no end-user accounts or logins. If you do not agree with this Policy, please do not use the Site or provide personal data.",
-      "docContent": [
-        {
-          "id": "information-we-collect",
-          "title": "Information We Collect",
-          "content": [
-            "We collect only the information needed to operate the Site, respond to inquiries, and provide Services."
-          ],
-          "list": [
-            "You provide: contact details and messages you submit (e.g., name, email, company, project information), and business/billing identifiers needed for quotes or invoices.",
-            "Collected automatically: limited device/usage data (IP address, browser, pages viewed, timestamps) and cookies or similar technologies that enable core functionality and, if enabled, basic analytics.",
-            "From third parties: payment status/metadata from Stripe (e.g., amount, transaction ID; not full card data), delivery metadata from email or chat providers, and publicly available business information to verify leads and prevent fraud.",
-            "We do not knowingly collect data from children (see Section 7)."
-          ]
-        },
-        {
-          "id": "how-we-use-personal-data",
-          "title": "How We Use Personal Data",
-          "list": [
-            "Respond to inquiries and schedule conversations.",
-            "Plan, scope, and deliver the Services you request.",
-            "Issue quotes, invoices, and reconcile payments.",
-            "Operate, secure, and improve the Site.",
-            "Comply with legal, tax, and contractual obligations."
-          ],
-          "content": [
-            "Where required by law (e.g., EEA/UK), processing is based on one or more of: contract (including pre-contract steps), legitimate interests (e.g., responding to your request, site security), consent (for non-essential cookies/analytics), and legal obligation (records retention, tax)."
-          ]
-        },
-        {
-          "id": "sharing-of-information",
-          "title": "Sharing of Information",
-          "content": [
-            "We do not sell or rent personal data. We share it only with:"
-          ],
-          "list": [
-            "Service providers acting on our behalf and under contract (e.g., hosting and infrastructure, email and communication tools, analytics if enabled).",
-            "All payment transactions, whether for Custom Projects (one-time or milestone-based) or for Support Plans (monthly subscriptions), are processed through Stripe. Rekhia does not collect or retain payment card details. Stripe acts as our payment processor and may collect data necessary to complete the transaction (e.g., name, email, billing details, partial card information). Please review Stripe’s Privacy Policy for details.",
-            "Professional advisers and authorities when required by law or to protect our rights (e.g., accountants, auditors, legal counsel).",
-            "Business transfers in the event of merger, acquisition, or corporate reorganization subject to appropriate safeguards."
-          ]
-        },
-        {
-          "id": "data-security-and-retention",
-          "title": "Data Security & Retention",
-          "content": [
-            "We apply commercially reasonable administrative, technical, and physical safeguards (HTTPS, access controls, least-privilege practices, vendor reviews). No method is 100% secure.",
-            "We keep personal data only as long as necessary for the purposes above and to meet legal/record-keeping duties. When retention ends, we delete or de-identify data."
-          ],
-          "list": [
-            "Contact/leads: typically 12–24 months after last interaction.",
-            "Project and billing records: typically 7 years.",
-            "Security logs: 90–365 days unless needed longer."
-          ]
-        },
-        {
-          "id": "your-rights",
-          "title": "Your Rights",
-          "list": [
-            "Access, correct, delete, object/restrict, and port your data.",
-            "Withdraw consent (where processing relies on consent).",
-            "File a complaint with your local supervisory authority."
-          ],
-          "content": [
-            "To exercise rights, email contact@rekhia.com. We may need to verify your identity and, where we process data on behalf of a client, route your request to that client (the controller)."
-          ]
-        },
-        {
-          "id": "childrens-privacy-and-third-party-links",
-          "title": "Children’s Privacy & Third-Party Links",
-          "content": [
-            "Our Site and Services are not directed to children under 13 (or the applicable age of consent). We do not knowingly collect data from children; if you believe a child provided data, contact us to remove it.",
-            "The Site may link to third-party websites or services; their privacy practices are their own—please review their policies."
-          ]
-        },
-        {
-          "id": "changes-and-contact",
-          "title": "Changes & Contact",
-          "content": [
-            "We may update this Policy from time to time. The “Effective Date” date will reflect the current version; material changes may be highlighted on the Site."
-          ],
-          "list": [
-            "Busdigital LLC (operating as Rekhia)",
-            "1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110, USA",
-            "Email: contact@rekhia.com"
-          ]
-        }
+  "link": "privacy-policy",
+  "title": "Privacy Policy",
+  "subtitle": "Effective Date",
+  "lastUpdated": "Last updated: October 2025",
+  "effectiveDate": "October 16, 2025",
+  "introduction": "Rekhia ('we,' 'our,' 'us') is a brand and service line operated by Busdigital LLC, a Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). This Privacy Policy explains how we collect, use, share, secure, and retain personal data in connection with: (a) our public website (the 'Site'); (b) sales and customer-support communications; and (c) delivery of our professional services (the 'Services'). For the data collected under this policy, we act as the 'data controller'. A separate section below explains our role as a 'data processor' when we handle data on behalf of our clients. If you do not agree with this Policy, please do not use the Site or provide personal data.",
+  "docContent": [
+    {
+      "id": "information-we-collect",
+      "title": "1. Information We Collect",
+      "content": [
+        "We collect only the information needed to operate the Site, respond to inquiries, and provide Services."
+      ],
+      "list": [
+        "You provide: contact details and messages you submit (e.g., name, email, company, project information), and business/billing identifiers needed for quotes or invoices.",
+        "Collected automatically: limited device/usage data (IP address, browser, pages viewed, timestamps) and cookies. Cookies are small text files that enable core functionality and, if you consent, basic analytics. You can manage cookies through your browser's settings.",
+        "From third parties: payment status/metadata from Stripe (e.g., amount, transaction ID; not full card data), delivery metadata from email or chat providers, and publicly available business information to verify leads and prevent fraud.",
+        "We do not knowingly collect data from children (see Section 8)."
       ]
+    },
+    {
+      "id": "how-we-use-personal-data",
+      "title": "2. How We Use Personal Data",
+      "list": [
+        "Respond to inquiries and schedule conversations.",
+        "Plan, scope, and deliver the Services you request.",
+        "Issue quotes, invoices, and reconcile payments.",
+        "Operate, secure, and improve the Site.",
+        "Comply with legal, tax, and contractual obligations."
+      ],
+      "content": [
+        "Where required by law (e.g., EEA/UK), our processing is based on one or more of: contract (including pre-contract steps), legitimate interests (e.g., responding to your request, site security), consent (for non-essential cookies/analytics), and legal obligation (records retention, tax)."
+      ]
+    },
+    {
+      "id": "sharing-of-information",
+      "title": "3. Sharing of Information",
+      "content": [
+        "We do not sell or rent personal data. We share it only with:"
+      ],
+      "list": [
+        "Service providers acting on our behalf and under contract (e.g., hosting and infrastructure, email and communication tools, analytics if enabled).",
+        "All payment transactions are processed through Stripe. Stripe acts as our payment processor and may collect data necessary to complete the transaction. Please review Stripe’s Privacy Policy for details.",
+        "Professional advisers and authorities when required by law or to protect our rights (e.g., accountants, auditors, legal counsel).",
+        "Business transfers in the event of merger, acquisition, or corporate reorganization subject to appropriate safeguards."
+      ]
+    },
+    {
+      "id": "controller-and-processor-roles",
+      "title": "4. Data Controller and Data Processor Roles",
+      "content": [
+        "We act as the 'data controller' for the information we collect from you to manage our business relationship (e.g., your contact and billing details).",
+        "We may act as a 'data processor' if you provide us with access to personal data controlled by you in order to perform our Services (for example, if we need access to your customer database for a project). In such cases, we will only process the data according to your instructions and our contractual agreement."
+      ]
+    },
+    {
+      "id": "international-data-transfers",
+      "title": "5. International Data Transfers",
+      "content": [
+        "Our business is global, which means your personal data may be transferred to, stored, and processed in countries other than your own, including the United States, where our company is registered. These countries may have data protection laws that are different from the laws of your country.",
+        "When we transfer personal data internationally, we take steps to ensure it is protected. For transfers of data from regions such as the European Economic Area (EEA), UK, or Switzerland, we rely on appropriate safeguards, such as the Standard Contractual Clauses (SCCs) approved by the European Commission, to ensure that your data is treated securely and in accordance with this Privacy Policy."
+      ]
+    },
+    {
+      "id": "data-security-and-retention",
+      "title": "6. Data Security & Retention",
+      "content": [
+        "We apply commercially reasonable administrative, technical, and physical safeguards (HTTPS, access controls, least-privilege practices, vendor reviews). No method is 100% secure.",
+        "We keep personal data only as long as necessary for the purposes above and to meet legal/record-keeping duties. When retention ends, we delete or de-identify data."
+      ],
+      "list": [
+        "Contact/leads: typically 12–24 months after last interaction.",
+        "Project and billing records: typically 7 years for legal and tax purposes.",
+        "Security logs: 90–365 days unless needed longer."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "title": "7. Your Rights",
+      "list": [
+        "Access, correct, delete, object/restrict, and port your data.",
+        "Withdraw consent (where processing relies on consent).",
+        "File a complaint with your local supervisory authority."
+      ],
+      "content": [
+        "To exercise your rights, please email contact@rekhia.com. We may need to verify your identity before processing your request. Please note that these rights are not absolute and may be subject to our own legal obligations (for example, we cannot delete billing data that we are required to keep for tax purposes)."
+      ]
+    },
+    {
+      "id": "childrens-privacy-and-third-party-links",
+      "title": "8. Children’s Privacy & Third-Party Links",
+      "content": [
+        "Our Site and Services are not directed to children under 16 (or the applicable age of consent). We do not knowingly collect data from children; if you believe a child has provided data, contact us to remove it.",
+        "The Site may link to third-party websites or services; their privacy practices are their own—please review their policies."
+      ]
+    },
+    {
+      "id": "changes-and-contact",
+      "title": "9. Changes & Contact",
+      "content": [
+        "We may update this Policy from time to time. The 'Last updated' date will reflect the current version; material changes may be highlighted on the Site."
+      ],
+      "list": [
+        "Busdigital LLC (operating as Rekhia)",
+        "1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110, USA",
+        "Email: contact@rekhia.com"
+      ]
+    }
+  ]
     },
     {
       "link": "terms-of-service",
       "title": "Terms of Service",
       "subtitle": "Effective Date",
-      "lastUpdated": "Last updated: September 2025",
-      "effectiveDate": "October 6, 2025",
-      "introduction": "Rekhia (\"we,\" \"our,\" \"us\") is a brand and service line operated by Busdigital LLC, a multi-member Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). These Terms govern your use of Rekhia’s website and your purchase of our professional services. By accepting a proposal/statement of work, paying an invoice or Stripe payment link, or otherwise engaging Rekhia (each an “Order”), you agree to these Terms. If you do not agree, do not use our Services.",
+      "lastUpdated": "Last updated: October 2025",
+      "effectiveDate": "October 16, 2025",
+      "introduction": "Rekhia ('we,' 'our,' 'us') is a brand and service line operated by Busdigital LLC, a multi-member Limited Liability Company registered in New Mexico, USA (1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110). These Terms govern your business’s use of Rekhia’s website and your purchase of our professional services. By accepting a proposal/statement of work, paying an invoice or Stripe payment link, or otherwise engaging Rekhia (each an 'Order'), you, on behalf of your business ('Client'), agree to these Terms. If you do not agree, do not use our Services.",
       "docContent": [
         {
-          "id": "services-provided",
-          "title": "Services Provided",
+          "id": "commercial-use-of-service",
+          "title": "1. Commercial Use of Service",
+          "content": [
+            "Our services are designed for and directed to business and professional clients. By engaging our services, Client represents and warrants that it is doing so for business, commercial, or professional purposes, and not as a 'consumer' within the meaning of any applicable consumer protection laws."
+          ]
+        },
+        {
+          "id": "services-and-orders",
+          "title": "2. Services and Orders",
           "content": [
             "We offer custom, project-based services—including discovery, UX/UI design, web/app development, e-commerce implementation, and related consulting—scoped and priced in the applicable Order.",
             "We also offer monthly Support Plans (optional), which provide ongoing care and improvements with a monthly hour allocation and response-time targets (SLA). Unless expressly stated in an Order, Support Plan hours do not roll over to the next month."
@@ -349,44 +375,46 @@
         },
         {
           "id": "payment-and-billing",
-          "title": "Payment & Billing",
+          "title": "3. Payment & Billing",
           "list": [
             "Unless otherwise agreed in writing, all payments for both Custom Projects and Support Plans are processed securely through Stripe. Clients may receive either a Stripe payment link or a Stripe-generated invoice, depending on the nature of the engagement. Rekhia does not directly collect or store credit card details; all transactions are handled by Stripe in accordance with its security standards.",
-            "Custom Projects: Fees and milestones appear in your Order (e.g., deposit, phase/milestone payments, final). Once a phase begins, associated deposits/milestone payments are non-refundable. Payment is due upon receipt unless stated otherwise.",
+            "Custom Projects: Fees and milestones appear in your Order. A non-refundable deposit (typically 50% of the project total) is required to schedule the work. Once a phase begins, associated deposits/milestone payments are non-refundable. Invoices are due upon receipt unless stated otherwise.",
             "Support Plans: Billed monthly in advance via Stripe links or invoices provided by Rekhia’s sales team. The current billing month is non-refundable; you may cancel at any time effective the next cycle.",
             "Extra hours & rates: Time beyond a plan’s allocation is billed at $45/hour (unless otherwise agreed in the Order).",
+            "Late Payments: We reserve the right to suspend all services and withhold delivery of any work until payment is made in full. Overdue invoices may be subject to a late fee of 1.5% per month, or the maximum rate permitted by law.",
             "Taxes: Fees are exclusive of taxes; you are responsible for applicable sales/VAT/withholding or similar taxes (excluding Rekhia’s income tax). If withholding applies, gross-up may be required so Rekhia receives full net amounts."
           ]
         },
         {
-          "id": "term-cancellation-and-changes",
-          "title": "Term, Cancellation & Changes",
+          "id": "client-responsibilities-and-approvals",
+          "title": "4. Client Responsibilities & Approvals",
           "list": [
-            "Custom Projects: An Order continues until completion or earlier termination. You may cancel at any time, but you remain responsible for all work performed (including phases in progress) and incurred, non-cancelable costs; amounts paid are non-refundable. Changes to scope/timeline require a written change order with adjusted fees and dates.",
-            "Support Plans: Continue month-to-month unless the Order states otherwise. You may cancel at any time; cancellation takes effect at the end of the then-current month. Unused hours are not refundable and do not roll over. We may suspend or terminate for non-payment, suspected fraud/abuse, or material breach."
+            "Client Obligations: Client agrees to (i) provide timely access to necessary information, credentials, content, and decision-makers; (ii) review deliverables and provide consolidated feedback promptly; and (iii) ensure it has all rights and permissions to any materials supplied to Rekhia.",
+            "Project Delays: We will not be liable for any failure or delay in delivering the services that is caused by Client’s failure to fulfill its obligations. If a Client-caused delay exceeds fourteen (14) business days, we reserve the right to pause the project and reschedule its continuation subject to our availability, which may incur a rescheduling fee.",
+            "Approvals: Client will have five (5) business days to review and approve each deliverable. If no feedback is provided within this period, the deliverable will be deemed approved and we will proceed to the next phase."
           ]
         },
         {
-          "id": "client-responsibilities-and-confidentiality",
-          "title": "Client Responsibilities & Confidentiality",
+          "id": "changes-and-termination",
+          "title": "5. Changes & Termination",
           "list": [
-            "Responsibilities: You agree to (i) provide timely access to information, credentials, content, and decision-makers; (ii) review and approve/reject deliverables within reasonable periods; and (iii) ensure you have all rights and permissions to any materials you supply.",
-            "Confidentiality: Each party may receive confidential information of the other. The receiving party will use it only to perform under the Order, protect it with reasonable care, and not disclose it except to personnel or contractors bound by similar duties.",
-            "Exceptions: Confidentiality obligations do not apply to information that is public, independently developed, or rightfully obtained from a third party. Disclosures required by law are permitted with prompt notice where lawful."
+            "Changes to Scope: Any request for work outside the scope of an Order must be submitted as a written 'Change Order'. No such change will be effective until both parties have agreed in writing to the new scope, timeline, and any additional fees.",
+            "Termination by Client: You may cancel an Order at any time by written notice, but you remain responsible for payment for all work performed and costs incurred up to the date of cancellation. All payments made are non-refundable.",
+            "Termination by Rekhia: We may terminate an Order with written notice if the Client fails to make a payment when due, commits a material breach of these Terms, or becomes insolvent."
           ]
         },
         {
-          "id": "intellectual-property-and-third-party-components",
-          "title": "Intellectual Property & Third-Party Components",
+          "id": "intellectual-property",
+          "title": "6. Intellectual Property",
           "content": [
-            "Upon full payment of amounts due for the applicable Order, you own the final deliverables created specifically for you (design assets, code, documents), excluding Pre-Existing IP (our tools, libraries, templates, know-how) and third-party components.",
+            "Upon full and final payment of all amounts due for the applicable Order, you own the final deliverables created specifically for you (design assets, code, documents), excluding Pre-Existing IP (our tools, libraries, templates, know-how) and third-party components.",
             "To the extent our Pre-Existing IP is included in a deliverable, we grant you a non-exclusive, perpetual, worldwide, royalty-free license to use it as embedded in that deliverable. Third-party and open-source components remain governed by their respective licenses.",
-            "Unless you object in writing, we may reference your name/logo and non-confidential visuals as portfolio/case-study material."
+            "Unless you object in writing, we may reference your business name/logo and non-confidential visuals as portfolio/case-study material."
           ]
         },
         {
           "id": "limitations-disclaimers-and-liability",
-          "title": "Limitations, Disclaimers & Liability",
+          "title": "7. Limitations, Disclaimers & Liability",
           "list": [
             "Third-party services: You acknowledge dependencies on third-party platforms (e.g., hosting, domains, CDNs, analytics, APIs, Stripe). We do not control their availability, pricing, policies, or security and are not responsible for their outages, data loss, or changes.",
             "Warranty disclaimer: Except as expressly stated in an Order, the Services and deliverables are provided “as is” without warranties of any kind, whether express, implied, statutory, or otherwise (including merchantability, fitness for a particular purpose, non-infringement, or uninterrupted operation).",
@@ -396,7 +424,7 @@
         },
         {
           "id": "governing-law-disputes-and-contact",
-          "title": "Governing Law, Disputes & Contact",
+          "title": "8. Governing Law, Disputes & Contact",
           "content": [
             "These Terms are governed by the laws of the United States and the State of New Mexico, without regard to conflict-of-law rules. Subject to any agreed mediation/arbitration, the state and federal courts in Bernalillo County, New Mexico (Albuquerque) have exclusive jurisdiction; the parties consent to personal jurisdiction and venue there."
           ],
@@ -412,58 +440,56 @@
       "link": "about",
       "title": "About Us",
       "subtitle": "Effective Date",
-      "lastUpdated": "September 31, 2025",
-      "effectiveDate": "October 6, 2025",
-      "introduction": "Rekhia is a UX & Software Studio dedicated to creating practical, elegant, and scalable digital experiences. We operate under Busdigital LLC, a Limited Liability Company registered in New Mexico, USA. Rekhia bridges design, technology, and strategy to help businesses establish a strong digital presence.",
+      "lastUpdated": "October 16, 2025",
+      "effectiveDate": "October 16, 2025",
+      "introduction": "Rekhia is a UX & Software Studio that partners with ambitious businesses to build reliable, elegant, and scalable digital platforms. We operate under Busdigital LLC, a Limited Liability Company registered in New Mexico, USA. We exist to close the gap between a powerful business vision and the technology required to bring it to life.",
       "docContent": [
         {
-          "id": "what-we-do",
-          "title": "What We Do",
+          "id": "our-philosophy",
+          "title": "1. Our Philosophy: Beyond the Code",
           "content": [
-            "At Rekhia, we specialize in bridging design and technology to deliver complete digital solutions. Our work spans UX/UI design, web and app development, and e-commerce implementation—crafted to meet modern business needs with precision and scalability. Whether creating a new brand experience or improving an existing one, we combine user-centered design, technical excellence, and strategic insight to ensure that every project we undertake is both functional and future-ready."
+            "We believe that great technology should feel effortless. Many businesses are held back by digital experiences that are clunky, unreliable, or difficult to scale. Rekhia was founded on a simple principle: to create clean, high-performance digital products that are a pleasure to use and easy to manage. We combine strategic design with robust engineering to build platforms that don't just work, but empower your business to grow."
+          ]
+        },
+        {
+          "id": "who-we-serve",
+          "title": "2. Who We Serve",
+          "content": [
+            "We work best with startups, SaaS companies, and established businesses that are ready to invest in a high-quality digital foundation. Our ideal partners are forward-thinking leaders who understand that a superior user experience is a critical competitive advantage."
           ]
         },
         {
           "id": "services",
-          "title": "Services",
+          "title": "3. Our Core Services",
           "list": [
-            "UX/UI Design – Research, wireframing, user flows, and pixel-perfect interfaces.",
-            "Web & App Development – High-performance, responsive, and scalable solutions.",
-            "E-commerce Solutions – Storefronts, payments, fulfillment integrations.",
-            "Support Plans – Ongoing care, maintenance, and optimization."
+            "UX/UI Design – From in-depth research to pixel-perfect interfaces that drive user action.",
+            "Web & App Development – Building high-performance, responsive, and secure platforms.",
+            "E-commerce Solutions – Crafting seamless online retail experiences, from storefront to checkout.",
+            "Support Plans – Providing dedicated ongoing care, maintenance, and optimization."
           ]
         },
         {
-          "id": "how-we-work",
-          "title": "How We Work",
+          "id": "our-process",
+          "title": "4. Our Process: From Idea to Impact",
           "list": [
-            "Discovery – Define goals, scope, and requirements.",
-            "Design – Visualize the experience with clarity and consistency.",
-            "Development – Build with modern frameworks and best practices.",
-            "Delivery & Support – Launch, monitor, and improve continuously."
+            "Discovery – We don't just ask what you want; we uncover what your business needs to succeed.",
+            "Design – We visualize the user journey with clarity, creating intuitive and consistent experiences.",
+            "Development – We build with modern, scalable frameworks and a fanaticism for clean code.",
+            "Delivery & Support – We launch your product and provide the ongoing support needed for continuous improvement."
           ]
         },
         {
-          "id": "how-we-collaborate",
-          "title": "How We Collaborate",
+          "id": "our-values-in-action",
+          "title": "5. Our Values in Action",
           "list": [
-            "Rekhia values close partnerships with clients. Our workflow is transparent, with regular communication and milestone-based checkpoints.",
-            "Payments are simple and secure through Stripe—both for custom projects and monthly support plans.",
-            "Clients can expect honesty, accessibility, and solutions aligned with their business needs."
-          ]
-        },
-        {
-          "id": "what-we-value",
-          "title": "What We Value",
-          "list": [
-            "Precision – Every detail matters.",
-            "Clarity – In design, communication, and execution.",
-            "Scalability – Building systems and experiences that evolve with time."
+            "Precision – Every detail impacts user trust. We are meticulous in our work to ensure a flawless final product that reflects the quality of your brand.",
+            "Clarity – Ambiguity creates risk. We prioritize clear communication, transparent processes, and intuitive design so you always know where we stand.",
+            "Scalability – Your success is our goal. We build flexible systems that can grow from 100 users to 100,000 without requiring a complete rebuild."
           ]
         },
         {
           "id": "legal-and-contact",
-          "title": "Legal & Contact",
+          "title": "6. Legal & Contact",
           "list": [
             "Rekhia is operated by Busdigital LLC (New Mexico, USA).",
             "Address: 1209 Mountain Road Pl NE Ste N, Albuquerque, NM 87110, USA",

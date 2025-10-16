@@ -14,8 +14,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { default: seo } = await import(`@/messages/${locale}/seo.json`);
 
   const articleSeo = seo.docs[slug] || seo.docs['default'];
-
-
   const title = articleSeo?.title 
   const description = articleSeo?.description 
 

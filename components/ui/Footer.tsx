@@ -2,7 +2,6 @@ import React from 'react'
 import { notable, inter } from '@/lib/fonts'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-// // bg-[#141414]
 
 export const Footer = () => {
   return (
