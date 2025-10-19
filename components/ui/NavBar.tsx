@@ -55,10 +55,10 @@ export function NavbarDemo() {
       name: "Contact",
       link: "/contact",
     },
-    {
-      name: "Pricing",
-      link: "/pricing",
-    },
+    // {
+    //   name: "Pricing",
+    //   link: "/pricing",
+    // },
     {
       name: "FAQ",
       link: "/faq",

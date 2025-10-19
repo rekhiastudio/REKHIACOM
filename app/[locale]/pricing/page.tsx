@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { ServiceCardSpotligh } from "@/components/ui/ServiceCardSpotlight";
 import CTA from "@/components/ui/cta-prefooter";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
 
 type Props = {
@@ -78,6 +79,12 @@ export default function Pricing() {
     gradientTo: "rgba(0,0,0,0)",
     gradientStop: "85%"
   };
+
+  const redirectToHome = () => {
+    redirect('/');
+  };
+
+  return redirectToHome();
 
   return (
     <main className="flex flex-col min-h-screen bg-black">
