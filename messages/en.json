@@ -7,45 +7,45 @@
     "about": "About"
   },
   "Hero": {
-    "title": "Rekhia: The <cl>UX</cl>  & Software <break>Development Studio</break>",
-    "subtitle": "We are a team committed to developing cutting-edge digital experiences, from websites to e-commerce platforms. Think beyond the present—let's create the digital experience your business truly deserves.",
+    "title": "<tl>Rekhia</tl>: Your Strategic Partner <break></break> in Design & <cl>Technology</cl>. We Build Market-Defining Products.   ",
+    "subtitle": "We partner with founders and product leaders to validate, design, build, and scale their vision into reliable, market-ready digital products.",
     "cta": "Contact Us"
   },
   "Services": {
-    "title": "Services",
+    "title": "Your Growth Framework",
     "web": {
-      "title": "Web & App Development",
-      "desc": "Building fast, scalable websites and applications with modern technologies. We turn ideas into reliable digital products, ready to grow with your business."
+      "title": "Strategy & Product",
+      "desc": "Success starts here. We dive deep into your market, validate user needs, define your product roadmap, and build a business case to ensure we're not just building software—we're building a successful business."
     },
     "ux": {
-      "title": "UX/UI Design",
-      "desc": "Crafting intuitive and elegant interfaces that put users first. From wireframes to polished visuals, we design experiences that are clear, engaging, and conversion-driven."
+      "title": "Experience Design (UX/UI)",
+      "desc": "We translate proven strategy into intuitive and elegant interfaces. From wireframes to polished prototypes, we design conversion-driven experiences that are clear, engaging, and ready for development."
     },
     "support": {
-      "title": "Support Plans",
-      "desc": "Flexible monthly plans to keep your digital presence running smoothly. Continuous updates, optimizations, and support tailored to your needs."
+      "title": "Engineering & Development",
+      "desc": "Our developers bring the validated vision to life with modern, scalable technologies. We turn ideas into reliable digital products, building fast, robust applications ready to grow with your business."
     }
   },
   "Process": {
-    "title": "Our Process",
+    "title": "The Process",
     "subtitle": "Every project follows a clear and proven path. From discovery to growth, we ensure precision at every step—so your digital solution is built to last and evolve."
   },
   "Timeline": {
     "step1": {
-      "title": "Initial Contact & Discovery",
-      "desc": "The journey begins with a conversation. Our sales and UX representatives listen closely to your needs, goals, and challenges, making sure we understand your vision before any design work begins."
+      "title": "Immersion & Strategy",
+      "desc": "The journey begins by aligning our visions. We dive deep into your business objectives, market landscape, and user needs to build a solid product strategy. This foundational step ensures every design and engineering decision is aimed at your success."
     },
     "step2": {
-      "title": "Design & Prototyping",
-      "desc": "Our UX/UI team translates ideas into wireframes and interactive prototypes. This stage focuses on clarity, usability, and aesthetics—ensuring you can see and feel your product before development."
+      "title": "Blueprint & Validation",
+      "desc": "This is where strategy becomes a tangible experience. We design a high-fidelity, interactive prototype that lets you see and feel your product. By validating this 'blueprint' with real users, we eliminate risks and perfect the experience before a single line of code is written."
     },
     "step3": {
-      "title": "Development & Implementation",
-      "desc": "With the design approved, our developers bring it to life using modern, scalable technologies. You receive regular updates and previews as your product takes shape."
+      "title": "Construction & Delivery",
+      "desc": "With a validated blueprint, our engineering team brings the vision to life with precision. Using agile methodologies, we build a robust, scalable, and pixel-perfect digital product. Through transparent sprints and continuous quality assurance, we deliver a world-class product."
     },
     "step4": {
-      "title": "Delivery & Ongoing Support",
-      "desc": "Once your product is ready, we launch it with precision. But our work doesn’t stop there—our flexible support plans keep everything running smoothly and evolving with your business."
+      "title": "Launch & Evolutiont",
+      "desc": "Our work doesn't end at launch—it accelerates. We ensure a seamless deployment and then transition to monitoring real-world performance and user data. This phase establishes a cycle of continuous improvement, turning your product into an asset that evolves and grows long-term."
     }
   },
   "CTA": {
@@ -131,62 +131,62 @@
     "subtitle": "Frequently Asked Questions",
     "items1": [
       {
-        "title": "What kinds of projects do you take on?",
-        "desc": "Websites, landing pages, e-commerce, web apps, and redesigns. We also handle migrations, evaluated case-by-case based on complexity."
+        "title": "You position yourselves as a 'Strategic Partner', not just a studio. What's the difference?'?",
+        "desc": "The difference is our investment in your business outcome. A typical studio executes a list of tasks. As your Strategic Partner, we start with the 'why'—your business goals, your market position, and your user's needs. We contribute ideas, challenge assumptions, and ensure every design and technology decision is aimed at creating a market-defining product. Our success isn't just delivering a project; it's delivering a tangible business asset that drives your growth."
       },
       {
-        "title": "Can you design from scratch or work with an existing design?",
-        "desc": "Both. We can create UX/UI from scratch or implement an existing design (e.g., Figma)."
+        "title": "What kind of client or project is the best fit for Rekhia?",
+        "desc": "We partner best with ambitious founders and established companies who view technology as a core business driver. Our ideal projects are complex digital products, B2B SaaS platforms, and applications where a deep understanding of user experience and robust engineering is critical. We thrive when we can act as a long-term strategic partner, not just a short-term vendor."
       },
       {
-        "title": "What does your process look like?",
-        "desc": "Kickoff → brief & goals → wireframes → UI → development → QA → delivery. Communication stays active throughout."
+        "title": "Why should we choose Rekhia over a larger agency or hiring freelancers?",
+        "desc": "We offer the best of both worlds. Unlike large agencies, you get direct access to senior-level architects and avoid layers of bureaucracy. Unlike freelancers, we provide a fully integrated and accountable team covering strategy, design, and engineering under one roof. This unified process eliminates the risks and communication gaps that come with managing a fragmented team."
       },
       {
-        "title": "How many rounds of revision are included?",
-        "desc": "Between 1–3 rounds per phase depending on project complexity and budget. Extra rounds can be added and quoted if needed."
+        "title": "Who will be working on our project?",
+        "desc": "Your project will be led and executed by our core team of senior architects and engineers. We do not outsource our primary work or delegate critical thinking to junior staff. You will be collaborating directly with the experts who have the experience to guide your product from strategy to launch and beyond, ensuring the highest quality and consistency."
       },
       {
-        "title": "How long does a project usually take?",
-        "desc": "Typical ranges (not hard deadlines): Landing Page 2–3 weeks; Gold Website (5+ pages) 4–6 weeks; Basic e-commerce 6–10 weeks. Every project gets its own brief and timeline."
+        "title": "How do you measure the success of a project?",
+        "desc": "Success is measured against the business goals we define together in Phase 1. While we track project milestones like delivery dates and budget, our ultimate measures of success are your business outcomes—such as user adoption, conversion rates, customer satisfaction, or operational efficiency. We build products designed to move your metrics."
       },
       {
-        "title": "How do we communicate during the project?",
-        "desc": "Discord for quick messaging and Notion for tasks, planning, and documentation."
+        "title": "Your 'Rekhia Blueprint' process is very detailed. Why is Phase 1 (Immersion & Strategy) so important?",
+        "desc": "The Strategy phase is the single most important factor in a project's success. By investing time upfront to validate assumptions, research the market, and align on goals, we prevent costly mistakes down the line. This phase ensures that the product we build isn't just beautifully designed and well-coded, but that it's also poised for market adoption and business growth."
       },
       {
-        "title": "What’s included in the monthly support plans?",
-        "desc": "Hours you can use for bug fixes, improvements, new sections, performance, light technical SEO, and small integrations—scaled to your plan."
+        "title": "Who owns the intellectual property (IP) of the final product?",
+        "desc": "You do. Upon final payment, 100% of the intellectual property, including the source code and design assets, is transferred to you. We retain no ownership of the final work product. Our goal is to build your asset, not ours."
       }
     ],
     "items2": [
       {
-        "title": "What happens if I use up all my plan hours?",
-        "desc": "Anything beyond your plan is billed at the standard hourly rate (rounded by full hours). You can also upgrade your plan."
+        "title": "How do you ensure transparency and alignment throughout the project?",
+        "desc": "Transparency is at the core of our partnership. We operate in agile sprints with regular live demos where you can see tangible progress. You'll have access to a shared Notion dashboard for tracking tasks and milestones, and a dedicated Discord channel for real-time communication. We treat you as a key member of the project team."
       },
       {
-        "title": "Do you handle hosting, deployments, backups, and security?",
-        "desc": "Yes. We typically deploy on Vercel and include monitoring/backups appropriate to the plan. We can extend coverage if needed."
+        "title": "What do you need from us during the project?",
+        "desc": "We view our clients as partners, and your active participation is key to success. We'll need your timely feedback during review sessions, your expertise on your industry and customers, and a dedicated point of contact from your team to ensure decisions can be made efficiently. The more collaborative our partnership, the better the outcome."
       },
       {
-        "title": "What tech stack do you use?",
-        "desc": "Primarily Next.js, Tailwind, shadcn/ui, and Vercel for deployment. We can also work with React (vanilla) or Vue.js when required."
+        "title": "What does a typical project investment look like?",
+        "desc": "Our partnerships are significant investments in core business assets. While every project is unique, our foundational 'Blueprint' projects typically start in the five-figure range (USD). The final investment depends on the project's complexity, scope, and strategic goals, and is always presented with a clear breakdown of value."
       },
       {
-        "title": "How do payments and billing work?",
-        "desc": "Monthly plans are paid via Stripe or bank transfer. Fixed-scope projects are billed by milestones; usually an upfront payment before UI work."
+        "title": "How are payments handled for a project?",
+        "desc": "For project-based work, we typically follow a milestone-based payment structure (e.g., 40% upfront, 30% at a key milestone, and 30% upon completion). All payments are processed securely through Stripe, allowing you to pay with all major credit cards or via bank transfer. We prioritize security and convenience in all transactions."
       },
       {
-        "title": "Are there extra costs (hosting, licenses, third-party tools)?",
-        "desc": "It depends. We can cover some services (e.g., hosting) or integrate third-party tools. Details are clarified in the proposal."
+        "title": "What happens if our project scope or priorities change mid-project?",
+        "desc": "Change is a natural part of product development. Our agile process is designed to accommodate it. If a new priority emerges, we discuss its impact on the timeline and budget with you transparently. We then adjust our sprint planning together to ensure we are always working on what provides the most value to your business."
       },
       {
-        "title": "Do you offer post-launch support or warranty?",
-        "desc": "Yes. Fixed-scope projects include 1 month of the Basic plan at no cost after delivery. After that, you can continue with any plan."
+        "title": "What is your technology philosophy?",
+        "desc": "Our philosophy is to use modern, proven, and scalable technologies that ensure your product is fast, reliable, and maintainable for years to come. We specialize in the Next.js and React ecosystem, leveraging platforms like Vercel for world-class performance. We choose tools because they are the right fit for your long-term business objectives."
       },
       {
-        "title": "Do you support multilingual sites and technical SEO?",
-        "desc": "Yes. We handle i18n, hreflang, metadata, and sitemaps by default. We can extend into performance work (Core Web Vitals) and reporting."
+        "title": "What happens after the product is launched?",
+        "desc": "The launch is just the beginning. Our 'Phase 4: Launch & Evolution' is designed to ensure your product thrives. For clients who want a continuous partnership, we offer dedicated 'Growth & Evolution' retainers to keep improving and scaling the product as your business grows, turning it from a project into a permanent asset."
       }
     ]
   },

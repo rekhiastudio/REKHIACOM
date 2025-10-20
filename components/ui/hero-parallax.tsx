@@ -11,6 +11,7 @@ import { inter } from "@/lib/fonts";
 import CtaButton from "./cta-button";
 import { useTranslations, useLocale } from 'next-intl';
 import Image from "next/image";
+import { notable } from "@/lib/fonts";
 
 type Product = { title: string; link: string; thumbnail: string };
 
@@ -132,11 +133,16 @@ export const HeroParallax = ({ products }: { products: Product[] }) => {
 };
 
 export const Header = () => {
+
+  const locale = useLocale();
+  const isRTL = locale === "he";
+
   const t = useTranslations("Hero");
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 md:pl-20 w-full left-0 top-0 ">
       <h1 className="text-[1.7rem] md:text-6xl font-bold text-white">
         {t.rich("title", {
+          tl: (chunks) => <span className={`${!isRTL && notable.className} text-red-500`}>{chunks}</span>,
           cl: (chunks) => <span className="text-red-500">{chunks}</span>,
           break: (chunks) => (
             <>
